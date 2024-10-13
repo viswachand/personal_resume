@@ -1,0 +1,261 @@
+{
+    "personalInformation": {
+        "name": "Bindu Cattamanchi",
+        "title": "Sr Data Engineer",
+        "contact": {
+            "phone": "+1 9452444669",
+            "email": "binduc2907@gmail.com",
+            "github": "https://github.com/binducattamanchi",
+            "linkedin": "https://www.linkedin.com/in/bindu-c-20981b16/",
+            "visaStatus": "H4 EAD Valid Thru 04/2027"
+        }
+    },
+    "aboutUs": {
+        "title": "About Us",
+        "summary": [
+            "As a Data Engineer with 12 years of professional work experience in the development, support, and implementation of software applications across various technologies, including Hadoop, Spark, PySpark, Scala, SQL, and Teradata.",
+            "With extensive hands-on experience in Big Data Processing, Data Warehouse ETL technologies, and cloud services such as AWS and Azure, Bindu has a proven ability to design and implement scalable data pipelines, optimize performance, and ensure data governance and compliance.",
+            "Highly dedicated and expert Sr Data Engineer with over 12 years of IT experience in development, support, and implementation of software applications across various technologies including Hadoop, Spark, PySpark, Scala, SQL, and Teradata.",
+            "Extensive hands-on experience in Big Data Processing, Data Warehouse ETL technologies, and cloud services such as AWS and Azure.",
+            "Proven ability to design and implement scalable data pipelines, optimize performance, and ensure data governance and compliance."
+        ]
+    },
+    "education": {
+        "degree": "Bachelor of Technology",
+        "institution": "Sri Venkateswara University",
+        "year": "2005-2009",
+        "location": "Tirupathi, India",
+        "honors": "Include if applicable"
+    },
+    "certifications": [
+        {
+            "name": "Databricks Lakehouse Fundamentals",
+            "year": 2024,
+            "icon": "/icons/lakehouse.png"
+        },
+        {
+            "name": "AWS Cloud Practitioner",
+            "year": 2023,
+            "icon": "/icons/aws.png"
+        },
+        {
+            "name": "Leetcode - Top SQL 50 Completion Badge",
+            "year": 2023,
+            "icon": "/icons/sql.png"
+        },
+        {
+            "name": "Teradata 12 Certified Professional",
+            "year": 2012,
+            "icon": "/icons/teradata.png"
+        }
+    ],
+    "skills": [
+        {
+            "title": "Cloud Technologies",
+            "items": [
+                "AWS S3",
+                "EMR",
+                "EC2",
+                "Kinesis",
+                "Azure Data Lake",
+                "ADF"
+            ]
+        },
+        {
+            "title": "Big Data Technologies",
+            "items": [
+                "HDFS",
+                "MapReduce",
+                "Sqoop",
+                "Hive",
+                "Kafka",
+                "OOZIE",
+                "YARN",
+                "Spark",
+                "Scala"
+            ]
+        },
+        {
+            "title": "Databases",
+            "items": [
+                "Teradata",
+                "MySQL",
+                "Oracle"
+            ]
+        },
+        {
+            "title": "Version Control Tools",
+            "items": [
+                "Git",
+                "CVS"
+            ]
+        },
+        {
+            "title": "Scripting Languages",
+            "items": [
+                "Unix Shell Scripting",
+                "SQL",
+                "HQL",
+                "Scala",
+                "Python (Basic Knowledge)"
+            ]
+        },
+        {
+            "title": "Reporting Tools",
+            "items": [
+                "Tableau",
+                "Domo",
+                "Grafana",
+                "Cognos"
+            ]
+        },
+        {
+            "title": "ETL Tools",
+            "items": [
+                "Informatica",
+                "SAP BODS"
+            ]
+        },
+        {
+            "title": "NoSQL Databases",
+            "items": [
+                "HBase",
+                "Cassandra (Basic Knowledge)"
+            ]
+        }
+    ],
+    "experience": [
+        {
+            "company": "TechPath Corp (Contract)",
+            "title": "Sr Data Engineer",
+            "duration": "2024-07 to Present",
+            "location": "Texas, United States",
+            "responsibilities": [
+                "Designed and implemented real-time data ingestion pipelines from mobile app events using Apache Kafka, PySpark, and AWS Kinesis to deliver actionable insights for product teams.",
+                "Developed scalable ETL workflows for transforming and storing app-generated data in AWS S3 and Azure Data Lake Storage for improved analytics and reporting capabilities.",
+                "Built and optimized Spark (PySpark) applications for large-scale data transformations, leveraging Hadoop-based platforms and utilizing Amazon EMR for processing Big Data across Hadoop clusters in Amazon EC2.",
+                "Applied advanced techniques such as partitioning, broadcast joins, and in-memory computations to improve performance while processing high-volume datasets.",
+                "Enabled personalized app experiences by integrating user behavior data into machine learning pipelines for recommendation engines.",
+                "Implemented real-time monitoring and alerting systems with Grafana and Prometheus, improving service uptime and reducing app crashes.",
+                "Ensured compliance with GDPR and CCPA data regulations by integrating security and governance protocols into data pipelines, safeguarding sensitive user information.",
+                "Developed and maintained data pipelines using Azure Data Factory and Azure Databricks, ensuring efficient data processing and analytics across cloud environments.",
+                "Led cross-functional collaboration to integrate data pipelines with mobile app backend services, optimizing user data management and improving backend process efficiency.",
+                "Automated job scheduling and workflow orchestration using Oozie, minimizing manual intervention and enhancing overall reliability and performance of the data processing ecosystem."
+            ],
+            "environment": [
+                "Hadoop",
+                "AWS S3",
+                "EC2",
+                "Kinesis",
+                "EMR",
+                "Azure Data Lake",
+                "ADF",
+                "Spark",
+                "PySpark",
+                "Kafka Streaming",
+                "Unix/Linux",
+                "JIRA",
+                "GIT",
+                "Grafana",
+                "Oozie"
+            ]
+        },
+        {
+            "company": "Target Corporation India",
+            "title": "Sr Data Engineer",
+            "duration": "2020-08 to 2022-07",
+            "location": "Bangalore, India",
+            "responsibilities": [
+                "Designed Spark data pipelines to ingest and transform data from Hive, HDFS (ORC format), and Kafka streams, using Scala and Spark SQL/Streaming that improved overall data processing speed and accuracy.",
+                "Converted JSON files from Kafka servers into ORC format, reducing storage costs while optimizing query performance for merchandising reports.",
+                "Developed Spark applications using Python (PySpark), utilizing Spark APIs over Hortonworks Hadoop YARN for analytics on data in Hive.",
+                "Applied in-memory capabilities, partitioning, and efficient joins to handle large datasets, significantly improving resource efficiency and reducing infrastructure costs.",
+                "Resolved Spark resource management issues, including memory errors and shuffle exceptions, enhancing job execution speed and cutting down processing costs.",
+                "Optimized Spark jobs using broadcast variables and efficient partitioning, reducing processing time and improving operational efficiency for planogram updates.",
+                "Implemented automated data quality checks at both the source and post-production levels using Amazon Deequ, ensuring compliance with HIPAA and CCPA regulations and reducing manual validation efforts.",
+                "Integrated SonarQube for code quality enforcement, improving code maintainability and reducing rework.",
+                "Enabled faster analysis of POG (Planogram) behaviors and patterns through the integration of Domo, helping business teams optimize product placement and improve in-store experiences.",
+                "Played a key role in improving data-driven decisions for merchandising strategies, contributing to an incremental boost in sales.",
+                "Automated job scheduling using Oozie, ensuring timely processing while reducing manual interventions and operational overhead.",
+                "Deployed real-time monitoring with Grafana, improving service reliability and reducing system downtime.",
+                "Led Scrum practices, coordinating across teams to ensure alignment between technical and business requirements, delivering milestones efficiently.",
+                "Deployed Spark applications through Drone and GitHub, leveraging CI/CD practices to accelerate the release cycle and minimize deployment errors."
+            ],
+            "environment": [
+                "Hadoop",
+                "MapReduce",
+                "Hive",
+                "Spark",
+                "PySpark",
+                "Scala",
+                "Kafka Streaming",
+                "Unix/Linux",
+                "JIRA",
+                "GIT",
+                "Amazon Deequ",
+                "Grafana",
+                "Drone",
+                "GitHub",
+                "Domo",
+                "InfluxDB"
+            ]
+        },
+        {
+            "company": "Target Corporation India",
+            "title": "Sr Data Engineer",
+            "location": "Bangalore, India",
+            "duration": "2014-12 to 2020-07",
+            "responsibilities": [
+                "Became a Subject Matter Expert (SME) on the Guest Domain, collaborating closely with business teams to address key requirements for optimizing the Guest Loyalty Program and improving customer retention strategies.",
+                "Spearheaded the migration project from Teradata to Hadoop and Hive to Spark-Scala, ensuring seamless data transitions with minimal downtime and significant improvements in query performance (up to 40% faster processing times).",
+                "Designed and implemented a high-performance data architecture on Hadoop, enhancing data storage, retrieval times, and overall processing efficiency for guest transaction and interaction data.",
+                "Led the development of optimized ETL pipelines for data extraction (using Sqoop) from sources like DB2, Teradata, and flat files, ensuring efficient transformation and loading of data into Hadoop, improving pipeline performance by 30%.",
+                "Worked onsite to implement critical production work, collaborating closely with source teams and end users during implementation phases. This helped prevent major failures and ensured smooth production deployments.",
+                "Collaborated with the Guest Modeling Team and Marketing Strategy Team to ensure real-time data availability for critical decision-making, including analyzing guest engagement metrics and offer effectiveness.",
+                "Played a key role in optimizing Spark and Hive queries by tuning partitioning, caching, and in-memory processing, leading to a significant reduction in job execution times and better resource utilization.",
+                "Implemented performance optimization techniques such as broadcast joins, YARN resource management, and heap tuning, significantly improving the efficiency of data processing operations.",
+                "Facilitated the development of data governance protocols and data quality checks, ensuring compliance with internal and external regulations, and enhancing data integrity and reliability."
+            ],
+            "environment": [
+                "Hadoop",
+                "Hive",
+                "Spark",
+                "Scala",
+                "Sqoop",
+                "MapReduce",
+                "Teradata",
+                "DB2",
+                "Unix/Linux",
+                "JIRA",
+                "GIT"
+            ]
+        }
+    ],
+    "projects": [
+        {
+            "title": "Guest Loyalty Program Analysis and Optimization",
+            "technologies": [
+                "Spark",
+                "Hadoop",
+                "Scala",
+                "AWS",
+                "Teradata"
+            ],
+            "description": "Led the data engineering efforts for the optimization of the Guest Loyalty Program by developing real-time data pipelines and analytics dashboards, resulting in enhanced customer retention and engagement strategies."
+        },
+        {
+            "title": "Mobile App Data Ingestion and Analysis",
+            "technologies": [
+                "AWS",
+                "Kinesis",
+                "Kafka",
+                "Spark",
+                "Azure"
+            ],
+            "description": "Developed a robust data ingestion framework for mobile app events, facilitating real-time analytics and user behavior insights through Spark and Kafka, leading to improved app performance and customer satisfaction."
+        }
+    ],
+    "references": {
+        "availableOnRequest": true
+    }
+}
