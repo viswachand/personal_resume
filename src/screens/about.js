@@ -1,13 +1,12 @@
 import {
-  Typography,
   ListItem,
   ListItemIcon,
   ListItemText,
 } from "@mui/material";
 import Grid from "@mui/material/Grid2";
 import jsonData from "../Data/Data.json";
-
-import DividerCom from "./utilities";
+import DividerCom from "../Components/utilities";
+import CustomTypography from "../Components/typography";
 
 function AboutUS() {
   const { title, summary } = jsonData.aboutUs;
@@ -15,22 +14,22 @@ function AboutUS() {
 
   return (
     <>
-      <Typography variant="h1">{title}</Typography>
+      <CustomTypography variant="h1">{title}</CustomTypography>
       <DividerCom />
 
       {summary.map((text, index) => (
-        <Typography key={index} variant="body1" sx={{ mb: 2, mt: 3 }}>
+        <CustomTypography key={index} variant="body1" sx={{ mb: 2, mt: 3 }}>
           {text}
-        </Typography>
+        </CustomTypography>
       ))}
 
-      <Typography variant="h1" sx={{ mb: 2 }}>
+      <CustomTypography variant="h1" sx={{ mb: 2 }}>
         Certifications
-      </Typography>
+      </CustomTypography>
 
       <Grid container spacing={2}>
         {certifications.map((certification, index) => (
-          <Grid xs={12} sm={6} key={index}>
+          <Grid xs={3} sm={6}  key={index}>
             <ListItem>
               <ListItemIcon sx={{ minWidth: "auto" }}>
                 <img

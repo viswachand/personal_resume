@@ -1,9 +1,9 @@
-import { Typography } from "@mui/material";
 import React from "react";
-import DividerCom from "./utilities";
+import DividerCom from "../Components/utilities";
 import { socialMedia } from "../Data/menu";
 import { useTheme, Grid2 } from "@mui/material"; // Changed from Grid2 to Grid for clarity
 import * as Icons from "@mui/icons-material";
+import CustomTypography from "../Components/typography";
 
 function Contact() {
   const theme = useTheme();
@@ -19,20 +19,20 @@ function Contact() {
 
   return (
     <>
-      <Typography variant="h1">Contact</Typography>
+      <CustomTypography variant="h1">Contact</CustomTypography>
       <DividerCom />
-      <Typography variant="body1" sx={{ mb: 2 }}>
+      <CustomTypography variant="body1" sx={{ mb: 2 }}>
         Feel free to reach out to me on the details mentioned below.
-      </Typography>
+      </CustomTypography>
 
       <Grid2 container alignItems="center" spacing={1}>
         <Grid2 item>
-          <Typography
+          <CustomTypography
             variant="h6"
             sx={{ fontWeight: "700", fontSize: "1.1rem" }}
           >
             Email:
-          </Typography>
+          </CustomTypography>
         </Grid2>
         <Grid2 item>
           {/* Updated email link to be clickable */}
@@ -47,9 +47,9 @@ function Contact() {
         justifyContent="flex-start"
         alignItems="center"
       >
-        <Typography variant="h6" sx={{ fontWeight: "700", fontSize: "1.1rem" }}>
+        <CustomTypography variant="h6" sx={{ fontWeight: "700", fontSize: "1.1rem" }}>
           Follow me:
-        </Typography>
+        </CustomTypography>
         {socialMedia.map((media) => (
           <Grid2 item key={media.id}>
             <a

@@ -2,9 +2,7 @@ import * as React from "react";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
 import CssBaseline from "@mui/material/CssBaseline";
-import Toolbar from "@mui/material/Toolbar";
 import List from "@mui/material/List";
-import Typography from "@mui/material/Typography";
 import ListItem from "@mui/material/ListItem";
 import {
   ListItemButton,
@@ -27,6 +25,7 @@ import Education from "./screens/education";
 import Projects from "./screens/projects";
 import Skills from "./screens/skills";
 import Contact from "./screens/contact";
+import CustomTypography from "./Components/typography"
 
 
 const drawerWidth = 300;
@@ -96,7 +95,7 @@ export default function PermanentDrawerLeft() {
             <CloseIcon />
           </IconButton>
         )}
-        <Toolbar />
+   
         <Box
           display="flex"
           justifyContent="center"
@@ -110,17 +109,17 @@ export default function PermanentDrawerLeft() {
           />
         </Box>
 
-        <Typography align="center" color="primary.light" variant="h2">
+        <CustomTypography align="center" color="primary.light" variant="h2">
           {name}
-        </Typography>
-        <Typography
+        </CustomTypography>
+        <CustomTypography
           align="center"
           color="primary.light"
           variant="h3"
           sx={{ mb: 1, mt: 1 }}
         >
           {title}
-        </Typography>
+        </CustomTypography>
         <Grid2
           container
           direction="row"
@@ -224,7 +223,7 @@ export default function PermanentDrawerLeft() {
             <Skills />
           </Box>
         </div>
-        <div id="Contact">
+        <div id="contact">
           <Box
             sx={{ backgroundColor: theme.palette.background.verylight, p: 4 }}
           >

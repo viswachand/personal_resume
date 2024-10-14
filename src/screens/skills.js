@@ -1,17 +1,17 @@
-import { Typography } from "@mui/material";
-import DividerCom from "./utilities";
+import DividerCom from "../Components/utilities";
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import jsonData from "../Data/Data.json";
+import CustomTypography from "../Components/typography";
 
 function Skills() {
   const { skills } = jsonData;
 
   return (
     <>
-      <Typography variant="h1">Skills</Typography>
+      <CustomTypography variant="h1">Skills</CustomTypography>
       <DividerCom />
       {skills.map((data, index) => (
         <Accordion key={index}>
@@ -20,13 +20,13 @@ function Skills() {
             aria-controls={`panel${index}-content`}
             id={`panel${index}-header`}
           >
-            <Typography>{data.title}</Typography>
+            <CustomTypography>{data.title}</CustomTypography>
           </AccordionSummary>
           <AccordionDetails sx={{ backgroundColor: "background.verylight" }}>
             <ul>
               {data.items.map((skill, skillIndex) => (
                 <li key={skillIndex}>
-                  <Typography variant="body1">{skill}</Typography>
+                  <CustomTypography variant="body1">{skill}</CustomTypography>
                 </li>
               ))}
             </ul>
