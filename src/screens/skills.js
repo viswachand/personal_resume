@@ -6,6 +6,7 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import jsonData from "../Data/Data.json";
 import CustomTypography from "../Components/typography";
 
+
 function Skills() {
   const { skills } = jsonData;
 

@@ -16,7 +16,6 @@ import IconButton from "@mui/material/IconButton";
 import CloseIcon from "@mui/icons-material/Close";
 import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
 import MenuIcon from "@mui/icons-material/Menu"; // Import Menu icon
-import * as Icons from "@mui/icons-material";
 import AboutUS from "./screens/about";
 import { Link as ScrollLink } from "react-scroll";
 import Experience from "./screens/experience";
@@ -27,6 +26,7 @@ import Contact from "./screens/contact";
 import CustomTypography from "./Components/typography";
 import CustomBox from "./Components/box";
 import CustomGrid from "./Components/grid";
+import CustomIcons from "./Components/icons"
 
 const drawerWidth = 300;
 
@@ -41,19 +41,8 @@ export default function PermanentDrawerLeft() {
     setOpen((prev) => !prev);
   };
 
-  const getIconComponent = (iconName) => {
-    const IconComponent = Icons[iconName];
-    return IconComponent ? (
-      <IconComponent
-        style={{ color: theme.palette.primary.light, fontSize: "33px" }}
-      />
-    ) : null;
-  };
-
   const handleScroll = () => {
     const currentScroll = window.scrollY;
-
-    // Show button when scrolled down more than 300px and hide it if at the top of the page
     setShowScroll(
       currentScroll > 300 &&
         currentScroll <
@@ -128,7 +117,7 @@ export default function PermanentDrawerLeft() {
                 rel="noopener noreferrer"
                 style={{ margin: "0 8px" }}
               >
-                {getIconComponent(media.icon)}
+                {CustomIcons(media.icon)}
               </a>
             </CustomGrid>
           ))}
