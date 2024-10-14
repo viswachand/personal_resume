@@ -1,9 +1,10 @@
 import React from "react";
 import DividerCom from "../Components/utilities";
 import { socialMedia } from "../Data/menu";
-import { useTheme, Grid2 } from "@mui/material"; // Changed from Grid2 to Grid for clarity
+import { useTheme } from "@mui/material"; // Changed from Grid2 to Grid for clarity
 import * as Icons from "@mui/icons-material";
 import CustomTypography from "../Components/typography";
+import CustomGrid from "../Components/grid";
 
 function Contact() {
   const theme = useTheme();
@@ -25,23 +26,23 @@ function Contact() {
         Feel free to reach out to me on the details mentioned below.
       </CustomTypography>
 
-      <Grid2 container alignItems="center" spacing={1}>
-        <Grid2 item>
+      <CustomGrid container alignItems="center" spacing={1}>
+        <CustomGrid item>
           <CustomTypography
             variant="h6"
             sx={{ fontWeight: "700", fontSize: "1.1rem" }}
           >
             Email:
           </CustomTypography>
-        </Grid2>
-        <Grid2 item>
+        </CustomGrid>
+        <CustomGrid item>
           {/* Updated email link to be clickable */}
           <a href="mailto:binduc2907@gmail.com">binduc2907@gmail.com</a>
-        </Grid2>
-      </Grid2>
+        </CustomGrid>
+      </CustomGrid>
       <br />
 
-      <Grid2
+      <CustomGrid
         container
         direction="row"
         justifyContent="flex-start"
@@ -51,7 +52,7 @@ function Contact() {
           Follow me:
         </CustomTypography>
         {socialMedia.map((media) => (
-          <Grid2 item key={media.id}>
+          <CustomGrid item key={media.id}>
             <a
               href={media.url}
               target="_blank"
@@ -60,9 +61,9 @@ function Contact() {
             >
               {getIconComponent(media.icon)}
             </a>
-          </Grid2>
+          </CustomGrid>
         ))}
-      </Grid2>
+      </CustomGrid>
     </>
   );
 }

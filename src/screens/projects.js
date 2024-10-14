@@ -2,8 +2,8 @@
 import React from "react";
 import DividerCom from "../Components/utilities";
 import jsonData from "../Data/Data.json";
-import Grid from "@mui/material/Grid2";
 import CustomTypography from "../Components/typography";
+import CustomGrid from "../Components/grid";
 
 function Projects() {
   const { projects } = jsonData;
@@ -11,20 +11,20 @@ function Projects() {
     <>
       <CustomTypography variant="h1">Projects</CustomTypography>
       <DividerCom />
-      <Grid container spacing={2}>
+      <CustomGrid container spacing={2}>
         {projects.map((project, index) => (
-          <Grid item xs={12} sm={6} md={4} key={index}>
+          <CustomGrid item xs={12} sm={6} md={4} key={index}>
             <CustomTypography variant="body2">{project.title}</CustomTypography>
-            <Grid container alignItems="center" spacing={1}>
-              <Grid item>
+            <CustomGrid container alignItems="center" spacing={1}>
+              <CustomGrid item>
                 <CustomTypography
                   variant="h6"
                   sx={{fontWeight:"700", fontSize:"1.1rem"}}
                 >
                   Environment:
                 </CustomTypography>
-              </Grid>
-              <Grid item>
+              </CustomGrid>
+              <CustomGrid item>
                 <CustomTypography
                   variant="body1"
                   component="span"
@@ -32,13 +32,13 @@ function Projects() {
                 >
                   {project.technologies.join(", ")}
                 </CustomTypography>
-              </Grid>
-            </Grid>
+              </CustomGrid>
+            </CustomGrid>
             <br/>
             <CustomTypography variant="body1">{project.description}</CustomTypography>
-          </Grid>
+          </CustomGrid>
         ))}
-      </Grid>
+      </CustomGrid>
      
     </>
   );

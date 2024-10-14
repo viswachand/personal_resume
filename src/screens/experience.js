@@ -1,8 +1,10 @@
 import React from "react";
-import { Box, Divider } from "@mui/material";
+import { Divider } from "@mui/material";
 import jsonData from "../Data/Data.json";
-import Grid from "@mui/material/Grid2";
 import CustomTypography from "../Components/typography";
+import CustomButton from "../Components/button";
+import CustomBox from "../Components/box";
+import CustomGrid from "../Components/grid";
 
 function Experience() {
   const { experience } = jsonData;
@@ -18,42 +20,42 @@ function Experience() {
           width: "6rem",
         }}
       />
-      <Box sx={{ width: "100%"}}>
-        <Grid container rowSpacing={0.5} sx={{mb:2}}>
+      <CustomBox sx={{ width: "100%" }}>
+        <CustomGrid container rowSpacing={0.5} sx={{ mb: 2 }}>
           {experience.map((item, index) => (
             <React.Fragment key={index}>
-              <Grid size={{ xs: 12, md: 8 }}>
+              <CustomGrid size={{ xs: 12, md: 8 }}>
                 <CustomTypography variant="body2">
                   {item.company}
                 </CustomTypography>
-              </Grid>
-              <Grid size={{ xs: 12, md: 4 }}>
+              </CustomGrid>
+              <CustomGrid size={{ xs: 12, md: 4 }}>
                 <CustomTypography variant="h6">
                   {" "}
                   {item.location}
                 </CustomTypography>
-              </Grid>
+              </CustomGrid>
 
-              <Grid size={{ xs: 12, md: 8 }}>
+              <CustomGrid size={{ xs: 12, md: 8 }}>
                 <CustomTypography variant="h7"> {item.title}</CustomTypography>
-              </Grid>
-              <Grid size={{ xs: 12, md: 4 }}>
+              </CustomGrid>
+              <CustomGrid size={{ xs: 12, md: 4 }}>
                 <CustomTypography variant="h7">
                   {" "}
                   {item.duration}
                 </CustomTypography>
-              </Grid>
+              </CustomGrid>
 
-              <Grid item xs={12}>
+              <CustomGrid item xs={12}>
                 <CustomTypography
                   variant="h3"
                   sx={{ fontWeight: "bold", marginTop: "16px", mb: "5px" }}
                 >
                   Environment:
                 </CustomTypography>
-                <Grid container direction="row" spacing={0.4}>
+                <CustomGrid container direction="row" spacing={0.4}>
                   {item.environment.map((envItem, envIndex) => (
-                    <Grid item key={envIndex}>
+                    <CustomGrid item key={envIndex}>
                       <CustomTypography
                         variant="body1"
                         component="span"
@@ -62,11 +64,11 @@ function Experience() {
                         {envItem}
                         {envIndex < item.environment.length - 1 && ","}{" "}
                       </CustomTypography>
-                    </Grid>
+                    </CustomGrid>
                   ))}
-                </Grid>
-              </Grid>
-              <Grid item xs={12}>
+                </CustomGrid>
+              </CustomGrid>
+              <CustomGrid item xs={12} mb={5}>
                 <CustomTypography
                   variant="h3"
                   sx={{ fontWeight: "bold", mt: "16px", mb: "16px" }}
@@ -82,13 +84,32 @@ function Experience() {
                     </li>
                   ))}
                 </ul>
-              </Grid>
-          
+                <CustomBox
+                  sx={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    mt: 3,
+                    mb: 3,
+                  }}
+                >
+                  
+                      <CustomButton
+                        key={index}
+                        variant="contained"
+                        color="primary"
+                        href={item.href}
+                        icon="Article"
+                      >
+                        Read More About this Article
+                      </CustomButton>
+                 
+                </CustomBox>
+              </CustomGrid>
             </React.Fragment>
           ))}
-           
-        </Grid>
-      </Box>
+        </CustomGrid>
+      </CustomBox>
     </>
   );
 }

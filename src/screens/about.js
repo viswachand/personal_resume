@@ -1,12 +1,8 @@
-import {
-  ListItem,
-  ListItemIcon,
-  ListItemText,
-} from "@mui/material";
-import Grid from "@mui/material/Grid2";
+import { ListItem, ListItemIcon, ListItemText } from "@mui/material";
 import jsonData from "../Data/Data.json";
 import DividerCom from "../Components/utilities";
 import CustomTypography from "../Components/typography";
+import CustomGrid from "../Components/grid"
 
 function AboutUS() {
   const { title, summary } = jsonData.aboutUs;
@@ -27,9 +23,9 @@ function AboutUS() {
         Certifications
       </CustomTypography>
 
-      <Grid container spacing={2}>
+      <CustomGrid container spacing={2}>
         {certifications.map((certification, index) => (
-          <Grid xs={3} sm={6}  key={index}>
+          <CustomGrid xs={3} sm={6} key={index}>
             <ListItem>
               <ListItemIcon sx={{ minWidth: "auto" }}>
                 <img
@@ -51,9 +47,9 @@ function AboutUS() {
                 }}
               />
             </ListItem>
-          </Grid>
+          </CustomGrid>
         ))}
-      </Grid>
+      </CustomGrid>
     </>
   );
 }

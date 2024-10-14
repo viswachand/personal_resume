@@ -1,5 +1,4 @@
 import * as React from "react";
-import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
 import CssBaseline from "@mui/material/CssBaseline";
 import List from "@mui/material/List";
@@ -12,7 +11,7 @@ import {
 } from "@mui/material";
 import { cardData, socialMedia } from "./Data/menu";
 import jsonData from "./Data/Data.json";
-import { useMediaQuery, useTheme, Grid2 } from "@mui/material";
+import { useMediaQuery, useTheme } from "@mui/material";
 import IconButton from "@mui/material/IconButton";
 import CloseIcon from "@mui/icons-material/Close";
 import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
@@ -25,8 +24,9 @@ import Education from "./screens/education";
 import Projects from "./screens/projects";
 import Skills from "./screens/skills";
 import Contact from "./screens/contact";
-import CustomTypography from "./Components/typography"
-
+import CustomTypography from "./Components/typography";
+import CustomBox from "./Components/box";
+import CustomGrid from "./Components/grid";
 
 const drawerWidth = 300;
 
@@ -66,9 +66,8 @@ export default function PermanentDrawerLeft() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-
   return (
-    <Box sx={{ display: "flex"}}>
+    <CustomBox sx={{ display: "flex" }}>
       <CssBaseline />
       <Drawer
         sx={{
@@ -95,19 +94,14 @@ export default function PermanentDrawerLeft() {
             <CloseIcon />
           </IconButton>
         )}
-   
-        <Box
-          display="flex"
-          justifyContent="center"
-          alignItems="center"
-    
-        >
+
+        <CustomBox display="flex" justifyContent="center" alignItems="center">
           <Avatar
             alt="Bindu Cattamanchi"
-            src="/icons/1721911796065.jpeg" 
-            sx={{ width: 150, height: 150, mb: 3 }} 
+            src="/icons/1721911796065.jpeg"
+            sx={{ width: 150, height: 150, mb: 3 }}
           />
-        </Box>
+        </CustomBox>
 
         <CustomTypography align="center" color="primary.light" variant="h2">
           {name}
@@ -120,14 +114,14 @@ export default function PermanentDrawerLeft() {
         >
           {title}
         </CustomTypography>
-        <Grid2
+        <CustomGrid
           container
           direction="row"
           justifyContent="center"
           alignItems="center"
         >
           {socialMedia.map((media) => (
-            <Grid2 item key={media.id} sx={{ mt: 2 }}>
+            <CustomGrid item key={media.id} sx={{ mt: 2 }}>
               <a
                 href={media.url}
                 target="_blank"
@@ -136,9 +130,9 @@ export default function PermanentDrawerLeft() {
               >
                 {getIconComponent(media.icon)}
               </a>
-            </Grid2>
+            </CustomGrid>
           ))}
-        </Grid2>
+        </CustomGrid>
         <List>
           {cardData.map(({ id, heading, icon, url }, index) =>
             url ? (
@@ -175,8 +169,7 @@ export default function PermanentDrawerLeft() {
           )}
         </List>
       </Drawer>
-      <Box component="main" sx={{ flexGrow: 1, bgcolor: "background.default" }}>
-        {/* <Toolbar /> */}
+      <CustomBox component="main" sx={{ flexGrow: 1, bgcolor: "background.default" }}>
         {isMobile && (
           <IconButton
             edge="end"
@@ -195,42 +188,42 @@ export default function PermanentDrawerLeft() {
           </IconButton>
         )}
         <div id="about">
-          <Box sx={{ p: 2 }}>
+          <CustomBox sx={{ p: 3 }}>
             <AboutUS />
-          </Box>
+          </CustomBox>
         </div>
         <div id="experience">
-          <Box
-            sx={{ backgroundColor: theme.palette.background.verylight, p: 4 }}
+          <CustomBox
+            sx={{ backgroundColor: theme.palette.background.verylight, p: 3 }}
           >
             <Experience />
-          </Box>
+          </CustomBox>
         </div>
         <div id="education">
-          <Box sx={{ p: 2 }}>
+          <CustomBox sx={{ p: 3 }}>
             <Education />
-          </Box>
+          </CustomBox>
         </div>
         <div id="projects">
-          <Box
-            sx={{ backgroundColor: theme.palette.background.verylight, p: 4 }}
+          <CustomBox
+            sx={{ backgroundColor: theme.palette.background.verylight, p: 3 }}
           >
             <Projects />
-          </Box>
+          </CustomBox>
         </div>
         <div id="skills">
-          <Box sx={{ p: 2 }}>
+          <CustomBox sx={{ p: 3 }}>
             <Skills />
-          </Box>
+          </CustomBox>
         </div>
         <div id="contact">
-          <Box
-            sx={{ backgroundColor: theme.palette.background.verylight, p: 4 }}
+          <CustomBox
+            sx={{ backgroundColor: theme.palette.background.verylight, p: 2 }}
           >
             <Contact />
-          </Box>
+          </CustomBox>
         </div>
-      </Box>
+      </CustomBox>
 
       {showScroll && (
         <IconButton
@@ -253,6 +246,6 @@ export default function PermanentDrawerLeft() {
           <ArrowUpwardIcon />
         </IconButton>
       )}
-    </Box>
+    </CustomBox>
   );
 }

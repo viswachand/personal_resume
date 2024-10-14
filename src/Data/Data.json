@@ -11,7 +11,7 @@
         }
     },
     "aboutUs": {
-        "title": "About Us",
+        "title": "About",
         "summary": [
             "As a Data Engineer with 12 years of professional work experience in the development, support, and implementation of software applications across various technologies, including Hadoop, Spark, PySpark, Scala, SQL, and Teradata.",
             "With extensive hands-on experience in Big Data Processing, Data Warehouse ETL technologies, and cloud services such as AWS and Azure, Bindu has a proven ability to design and implement scalable data pipelines, optimize performance, and ensure data governance and compliance.",
@@ -158,7 +158,8 @@
                 "GIT",
                 "Grafana",
                 "Oozie"
-            ]
+            ],
+            "href": "#hello"
         },
         {
             "company": "Target Corporation India",
@@ -198,7 +199,8 @@
                 "GitHub",
                 "Domo",
                 "InfluxDB"
-            ]
+            ],
+            "href": "#helloworld"
         },
         {
             "company": "Target Corporation India",
@@ -228,6 +230,9 @@
                 "Unix/Linux",
                 "JIRA",
                 "GIT"
+            ],
+            "href": [
+                "#helloworldthis"
             ]
         }
     ],
