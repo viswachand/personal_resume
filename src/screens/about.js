@@ -5,7 +5,6 @@ import { DividerCom, HighlightText } from "../Components/utilities";
 import CustomTypography from "../Components/typography";
 import CustomGrid from "../Components/grid";
 import CustomBox from "../Components/box";
-import ChevronRightOutlinedIcon from "@mui/icons-material/ChevronRightOutlined";
 import CustomButton from "../Components/button";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import { Link as ScrollLink } from "react-scroll";
@@ -37,10 +36,10 @@ function AboutUS({ aboutUs, keyCompetencies }) {
       <CustomTypography variant="h1" sx={{ mt: 4, mb: 2, fontSize: "1.5rem" }}>
         Key Competencies
       </CustomTypography>
-      <CustomBox sx={{ m: 1 }}>
+      <CustomBox sx={{ m: 2 }}>
         <CustomGrid
           container
-          spacing={3}
+          spacing={2}
           direction="row"
           sx={{
             justifyContent: "space-between",
@@ -50,10 +49,8 @@ function AboutUS({ aboutUs, keyCompetencies }) {
             <React.Fragment key={index}>
               <CustomGrid size={{ xs: 12, md: 6 }}>
                 <CustomTypography
-                  variant="body1"
-                  sx={{ display: "flex", alignItems: "center" }}
+                  variant="body1" 
                 >
-                  <ChevronRightOutlinedIcon fontSize="small" />
                   <strong>{competency.title}</strong> {competency.description}
                 </CustomTypography>
               </CustomGrid>

@@ -9,7 +9,7 @@ function Education({ education }) {
       <CustomTypography variant="h1">Education</CustomTypography>
       <DividerCom />
       {education.map((edu, index) => (
-        <CustomGrid container key={index}>
+        <CustomGrid container key={index} >
           <CustomGrid size={{ xs: 12, md: 8 }}>
             <a
               href={edu.url}
@@ -21,14 +21,14 @@ function Education({ education }) {
               </CustomTypography>
             </a>
           </CustomGrid>
-          <CustomGrid size={{ xs: 6, md: 4 }}>
+          <CustomGrid size={{ xs: 12, md: 4 }}>
             <CustomTypography variant="h6"> {edu.location}</CustomTypography>
           </CustomGrid>
 
-          <CustomGrid size={{ xs: 12, md: 8 }}>
+          <CustomGrid size={{ xs: 8, md: 8 }}>
             <CustomTypography variant="h7"> {edu.degree}</CustomTypography>
           </CustomGrid>
-          <CustomGrid size={{ xs: 12, md: 4 }}>
+          <CustomGrid size={{ xs: 6, md: 4 }}>
             <CustomTypography variant="h7"> {edu.year}</CustomTypography>
           </CustomGrid>
         </CustomGrid>

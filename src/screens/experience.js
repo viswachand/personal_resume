@@ -90,11 +90,12 @@ function Experience({ experience }) {
                       <CustomButton
                         variant="contained"
                         endIcon={<ArticleIcon fontSize="small" />}
-                        href={item.journey}
+                        href={item.journey || "#"}
                         target="_blank"
                         rel="noopener noreferrer"
+                        aria-label="Read more about my Moonraft journey in this article"
                       >
-                        Read More about my Moonraft journey in this artical
+                       Find Moonraft journey in this article
                       </CustomButton>
                     </CustomBox>
                   </>
