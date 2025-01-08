@@ -1,0 +1,272 @@
+{
+    "personalInformation": {
+        "name": "Viswachand Akkanambattu",
+        "title": "Software Engineer",
+        "contact": {
+            "phone": "+1 2164631168",
+            "email": "viswachand19@gmail.com",
+            "github": "https://github.com/binducattamanchi",
+            "linkedin": "https://www.linkedin.com/in/bindu-c-20981b16/",
+            "Medium": "https://medium.com/@LearnWithBindu",
+            "visaStatus": "F1 Valid Thru 07/2028"
+        }
+    },
+    "aboutUs": {
+        "title": "About Me",
+        "summary": [
+            "Highly skilled Data Engineering professional with over 12 years of experience in the IT industry, specializing in the Retail domain. Proven track record in architecting, implementing, and optimizing end-to-end data solutions throughout the entire Software Development Life Cycle (SDLC).",
+            "Expertise in orchestrating large-scale data migrations from legacy systems like Teradata to cutting-edge Big Data platforms, leveraging cloud technologies such as AWS and Azure.",
+            "Proficient in utilizing services including S3, EC2, ADF, Kinesis, Athena, and Glue to design robust, scalable data pipelines. Adept at harnessing the power of distributed computing frameworks like MapReduce and Apache Spark to process and analyze massive datasets efficiently. Demonstrates strong proficiency in SQL optimization and PySpark development to extract actionable insights from complex data structures.",
+            "Committed to implementing best practices in data governance, ensuring data integrity, and driving performance improvements in high-volume, mission-critical retail environments."
+        ]
+    },
+    "education": {
+        "degree": "Bachelor of Technology",
+        "institution": "Kalasalingam University",
+        "year": "2015-2019",
+        "location": "Krishankovil, India",
+        "honors": "Electronics and communication"
+    },
+    "certifications": [
+        {
+            "name": "Databricks Lakehouse Fundamentals",
+            "year": 2024,
+            "icon": "/icons/lakehouse.png"
+        },
+        {
+            "name": "AWS Cloud Practitioner",
+            "year": 2023,
+            "icon": "/icons/aws.png"
+        },
+        {
+            "name": "Leetcode - Top SQL 50 Completion Badge",
+            "year": 2023,
+            "icon": "/icons/sql.png"
+        },
+        {
+            "name": "Teradata 12 Certified Professional",
+            "year": 2012,
+            "icon": "/icons/teradata.png"
+        }
+    ],
+    "skills": [
+        {
+            "title": "Cloud Technologies",
+            "items": [
+                "AWS S3",
+                "EMR",
+                "EC2",
+                "Kinesis",
+                "Azure Data Lake",
+                "ADF"
+            ]
+        },
+        {
+            "title": "Big Data Technologies",
+            "items": [
+                "HDFS",
+                "MapReduce",
+                "Sqoop",
+                "Hive",
+                "Kafka",
+                "OOZIE",
+                "YARN",
+                "Spark",
+                "Scala"
+            ]
+        },
+        {
+            "title": "Databases",
+            "items": [
+                "Teradata",
+                "MySQL",
+                "Oracle"
+            ]
+        },
+        {
+            "title": "Version Control Tools",
+            "items": [
+                "Git",
+                "CVS"
+            ]
+        },
+        {
+            "title": "Scripting Languages",
+            "items": [
+                "Unix Shell Scripting",
+                "SQL",
+                "HQL",
+                "Scala",
+                "Python (Basic Knowledge)"
+            ]
+        },
+        {
+            "title": "Reporting Tools",
+            "items": [
+                "Tableau",
+                "Domo",
+                "Grafana",
+                "Cognos"
+            ]
+        },
+        {
+            "title": "ETL Tools",
+            "items": [
+                "Informatica",
+                "SAP BODS"
+            ]
+        },
+        {
+            "title": "NoSQL Databases",
+            "items": [
+                "HBase",
+                "Cassandra (Basic Knowledge)"
+            ]
+        }
+    ],
+    "experience": [
+        {
+            "company": "TechPath Corp (Contract)",
+            "title": "Sr Data Engineer",
+            "location": "Texas, United States",
+            "duration": "2024-07 to Present",
+            "responsibilities": [
+                "As a Data Engineer at TechPathCorp, I lead an in-house project focused on extracting and analyzing data from our mobile app to gain insights into user behavior and Bluetooth device connectivity. This involves developing a robust data pipeline that captures real-time user interactions and Bluetooth connection/disconnection events. I implemented API integration systems and utilized Kafka and Amazon Kinesis for efficient data streaming into AWS S3, ensuring low-latency ingestion.",
+                "Leveraging AWS Glue and PySpark, I create scalable ETL jobs to transform raw data into structured formats, focusing on key performance indicators such as Daily Active Users (DAU), session duration, feature adoption rates, and Bluetooth connectivity metrics. Additionally, I design real-time dashboards using Azure Dashboard services to provide stakeholders with actionable insights into app performance and user engagement. By actively participating in Agile ceremonies, I continuously enhance our data pipeline and analytics capabilities, driving targeted improvements based on user feedback.",
+                "This project has significantly improved our understanding of user behavior and connectivity issues, leading to informed product development decisions. The insights gained have not only enhanced the user experience but also contributed to increased retention and satisfaction, ultimately driving business value for TechPathCorp."
+            ],
+            "environment": [
+                "Hadoop",
+                "AWS S3",
+                "EC2",
+                "Kinesis",
+                "EMR",
+                "Azure Data Lake",
+                "ADF",
+                "Spark",
+                "PySpark",
+                "Kafka Streaming",
+                "Unix/Linux",
+                "Azure boards",
+                "GIT",
+                "Grafana",
+                "Airflow"
+            ]
+        },
+        {
+            "company": "Target Corporation India",
+            "title": "Sr Data Engineer",
+            "location": "Bangalore, India",
+            "duration": "2020-08 to 2022-07",
+            "responsibilities": [
+                "As a Senior Data Engineer in the Space Presentation and Transitions (SPT) team at Target, I played a crucial role in developing optimized data processing systems to support data-driven decisions for retail store space planning, inventory allocation, and planogram transitions. The Merch Space Presentation and Transition project focused on analyzing and optimizing item placement in Target store aisles to enhance sales performance.",
+                "I designed and implemented robust Spark data pipelines using Scala and PySpark to ingest and transform data from various sources, including Hive, HDFS (ORC format), and Kafka streams. These pipelines significantly improved data processing speed and accuracy, enabling faster analysis of planogram behaviors and patterns. By converting JSON files from Kafka servers into ORC format, we reduced storage costs while optimizing query performance for merchandising reports. I also applied in-memory capabilities, efficient partitioning, and join optimizations to handle large datasets, resulting in improved resource efficiency and reduced infrastructure costs.",
+                "To ensure data quality and compliance with HIPAA and CCPA regulations, I implemented automated checks using Amazon Deequ at both source and post-production levels. This reduced manual validation efforts and improved overall data integrity. I integrated Domo for faster analysis of planogram behaviors, helping business teams optimize product placement and improve in-store experiences. Additionally, I automated job scheduling using Oozie and deployed real-time monitoring with Grafana, enhancing service reliability and reducing system downtime."
+            ],
+            "Achievements": [
+                "Optimized Spark jobs using broadcast variables and efficient partitioning, reducing processing time for planogram updates by 30% and improving operational efficiency.",
+                "Implemented automated data quality checks and integrated SonarQube for code quality enforcement, reducing manual validation efforts by 40% and improving code maintainability.",
+                "Led Scrum practices and coordinated across teams, ensuring alignment between technical and business requirements, which resulted in a 25% improvement in milestone delivery efficiency and contributed to an incremental boost in sales through data-driven merchandising strategies."
+            ],
+            "environment": [
+                "Hadoop",
+                "MapReduce",
+                "Hive",
+                "Spark",
+                "PySpark",
+                "Scala",
+                "Kafka Streaming",
+                "Unix/Linux",
+                "JIRA",
+                "GIT",
+                "Amazon Deequ",
+                "Grafana",
+                "Drone",
+                "GitHub",
+                "Domo",
+                "InfluxDB"
+            ]
+        },
+        {
+            "company": "Target Corporation India (Guest Loyalty Program)",
+            "title": "Sr Data Engineer",
+            "location": "Bangalore, India",
+            "duration": "2014-12 to 2020-07",
+            "responsibilities": [
+                "As a Subject Matter Expert (SME) on the Guest Domain within Target's Guest Data Platform for the Loyalty and Marketing team, I played a pivotal role in optimizing the Guest Loyalty Program and improving customer retention strategies. My responsibilities included collaborating closely with business teams to address key requirements and spearheading the migration project from Teradata to Hadoop and Hive to Spark-Scala. This migration resulted in seamless data transitions with minimal downtime and significant improvements in query performance, achieving up to 40% faster processing times.",
+                "I designed and implemented a high-performance data architecture on Hadoop, enhancing data storage, retrieval times, and overall processing efficiency for guest transaction and interaction data. This architecture supported the collection and analysis of guest data from loyalty programs, offers sent through various channels (mobile, ads, etc.), and sales data. By optimizing Spark and Hive queries through techniques such as partitioning, caching, and in-memory processing, we significantly reduced job execution times and improved resource utilization. This enabled real-time data availability for critical decision-making, allowing the Guest Modeling Team and Marketing Strategy Team to analyze guest engagement metrics and offer effectiveness efficiently."
+            ],
+            "Achievements": [
+                "Led the development of optimized ETL pipelines for data extraction from sources like DB2, Teradata, and flat files, improving pipeline performance by 30% and ensuring efficient transformation and loading of data into Hadoop.",
+                "Implemented performance optimization techniques such as broadcast joins, YARN resource management, and heap tuning, significantly improving the efficiency of data processing operations for guest data analysis.",
+                "Facilitated the development of data governance protocols and data quality checks, ensuring compliance with internal and external regulations, and enhancing data integrity and reliability for offer data profiling and source error identification."
+            ],
+            "environment": [
+                "Hadoop",
+                "Hive",
+                "Spark",
+                "Scala",
+                "Sqoop",
+                "MapReduce",
+                "Teradata",
+                "DB2",
+                "Unix/Linux",
+                "JIRA",
+                "GIT"
+            ]
+        },
+        {
+            "company": "Capgemini (Unilever)",
+            "title": "Teradata Consultant",
+            "location": "Chennai, India",
+            "duration": "2013-01 to 2014-11",
+            "responsibilities": [
+                "As a Data Engineer on Unilever's Global Consumer Insights Platform, I played a crucial role in transforming raw consumer data into actionable insights for marketing and product development teams. The project aimed to consolidate data from various sources, including point-of-sale systems, e-commerce platforms, and social media, to create a comprehensive view of consumer behavior across Unilever's diverse product lines."
+            ],
+            "Achievements": [
+                " Utilized SAP BODS to design and implement ETL jobs for integrating data from over 15 global markets, improving processing efficiency by 20% and enabling near real-time insights into consumer purchasing patterns.",
+                "Developed optimized SQL code for the semantic layer, enhancing data retrieval speed for reporting tools by 35%, which allowed marketing teams to access up-to-date consumer behavior insights quickly.",
+                "Implemented automated data quality checks using SAP Information Steward, reducing manual validation time by 30% and ensuring the integrity of consumer data used for product innovation decisions.",
+                "Collaborated with cross-functional teams to optimize workflows and actively participated in all phases of the SDLC, identifying and resolving critical defects before production rollout, which led to a 15% increase in targeted campaign effectiveness."
+            ],
+            "environment": [
+                "Teradata SQL",
+                "Teradata BTEQ",
+                "Teradata FastExport",
+                "Teradata FastLoad",
+                "Teradata Administrator",
+                "IBM Rational ClearCase",
+                "Unix Shell Scripting",
+                "SAP BODS",
+                "SAP Information Steward"
+            ]
+        },
+        {
+            "company": "Cognizant Technology Solutions (Wellpoint)",
+            "title": "Sr DW BI Developer",
+            "duration": "2009-11 to 2013-01",
+            "responsibilities": [
+                "As a key member of the Wellpoint Comprehensive Care Wave 2 project, I contributed to enhancing the healthcare data infrastructure to support improved patient care and operational efficiency. This large-scale initiative focused on integrating diverse healthcare data sources, including patient records, claims data, and provider information, to create a comprehensive view of patient care across Wellpoint's network."
+            ],
+            "Achievements": [
+                "Designed and implemented complex ETL workflows using Informatica, processing over 50 million daily healthcare transactions with 99.9% accuracy. Optimized Teradata SQL queries for the semantic layer, resulting in a 30% improvement in data retrieval speeds for critical healthcare analytics.",
+                "Collaborated in an onshore-offshore model to develop CC II extracts, ensuring compliance with HIPAA regulations and Wellpoint's data governance policies. Created comprehensive documentation including test cases, implementation change requests, and data profiling reports to support smooth transitions across project phases.",
+                "Automated job scheduling and error handling processes using Unix shell scripting, reducing manual interventions by 40% and improving the reliability of nightly data loads critical for next-day healthcare operations and reporting.",
+                "This project significantly enhanced Wellpoint's ability to deliver personalized patient care, optimize resource allocation, and improve overall healthcare outcomes by providing timely, accurate, and comprehensive data insights to healthcare providers and administrators."
+            ],
+            "environment": [
+                "Informatica ETL",
+                "Teradata SQL",
+                "Teradata BTEQ",
+                "Teradata FastExport",
+                "Teradata FastLoad",
+                "Unix Shell Scripting",
+                "IBM Rational ClearCase",
+                "Citrix Unicenter Workload Manager (WLM)"
+            ]
+        }
+    ],
+    "references": {
+        "availableOnRequest": true
+    }
+}

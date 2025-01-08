@@ -2,7 +2,12 @@ import MuiTypography from "@mui/material/Typography";
 
 function CustomTypography({ variant, color, children, align, ...props }) {
   return (
-    <MuiTypography variant={variant} color={color} align={align ? align : ""} {...props}>
+    <MuiTypography
+      variant={variant}
+      color={color}
+      align={align} 
+      {...props}
+    >
       {children}
     </MuiTypography>
   );

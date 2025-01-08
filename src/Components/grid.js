@@ -1,10 +1,10 @@
-import { Grid2 } from "@mui/material";
+import Grid from '@mui/material/Grid2';
 
 function CustomGrid({ children, ...props }) {
   return (
-    <Grid2 {...props}>
+    <Grid {...props}>
       {children}
-    </Grid2>
+    </Grid>
   );
 }
 

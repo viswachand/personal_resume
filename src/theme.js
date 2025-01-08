@@ -1,9 +1,10 @@
+
 import { createTheme } from "@mui/material/styles";
 
 let theme = createTheme({
   palette: {
     primary: {
-      main: "#007bc2",
+      main: "rgb(3, 21, 112)",
       light: "#fafafa",
     },
     secondary: {
@@ -13,6 +14,7 @@ let theme = createTheme({
       main: "#007bc2",
       light: "#c4d9ef",
       verylight: "#eff5ff",
+      gradient: "linear-gradient(209.21deg, rgb(8 18 69) 10.57%, rgb(85 57 162) 99.38%);",
     },
     body: {
       light: "#000000",
@@ -29,7 +31,7 @@ theme = createTheme(theme, {
       [theme.breakpoints.down('sm')]: {
         fontSize: "1.5rem",
       },
-      color: "#0078bf",
+      color: "rgb(3, 21, 112)",
       hyphens: "auto",
       wordSpacing: "2px",
       whiteSpace: "nowrap",
@@ -37,8 +39,9 @@ theme = createTheme(theme, {
     h2: {
       fontFamily: '"Raleway", sans-serif;',
       fontWeight: "bold",
-      fontSize: "1.4rem",
+      fontSize: "1.2rem",
       color: "body.light",
+
     },
     h3: {
       fontFamily: "'Open Sans', sans-serif",
@@ -79,7 +82,7 @@ theme = createTheme(theme, {
       whiteSpace: "pre-wrap",
     },
     body2: {
-      fontFamily: "'Open Sans', sans-serif", // Use correct font name
+      fontFamily: "'Open Sans', sans-serif", 
       fontWeight: 700,
       fontSize: "1.3rem",
       color: "primary.main",
@@ -94,7 +97,7 @@ theme = createTheme(theme, {
       styleOverrides: {
         root: {
           minWidth: "40px",
-          color: "transperent", // Custom min-width
+          color: "transperent", 
         },
       },
     },
@@ -119,9 +122,13 @@ theme = createTheme(theme, {
     MuiSvgIcon: {
       styleOverrides: {
         root: {
-          // Customize this if needed
-          // fontSize: '40px',
-          // color: '#555',
+          // background: "linear-gradient(145deg, rgba(255,255,255,0.6), rgba(255,255,255,0.2))",
+          // color: "rgba(255,255,255,0.8)",
+          // boxShadow: "0 4px 6px rgba(0, 0, 0, 0.2), inset 0 1px 3px rgba(255, 255, 255, 0.5)",
+          // borderRadius: "50%",
+          // // padding: "20px",
+          // backdropFilter: "blur(10px)",
+          // border: "1px solid rgba(255, 255, 255, 0.2)",
         },
       },
     },

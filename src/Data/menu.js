@@ -1,7 +1,6 @@
 import PersonIcon from "@mui/icons-material/Person";
 import WorkIcon from "@mui/icons-material/Work";
 import SchoolIcon from "@mui/icons-material/School";
-import PersonalVideoIcon from "@mui/icons-material/PersonalVideo";
 import StarBorderIcon from "@mui/icons-material/StarBorder";
 import FilePresentIcon from "@mui/icons-material/FilePresent";
 import EmailIcon from "@mui/icons-material/Email";
@@ -23,11 +22,6 @@ export const cardData = [
     icon: <SchoolIcon />, // Added icon
   },
   {
-    id: "projects", // Updated to match the section ID
-    heading: "Projects",
-    icon: <PersonalVideoIcon />, // Added icon
-  },
-  {
     id: "skills", // Updated to match the section ID
     heading: "Skills",
     icon: <StarBorderIcon />, // Added icon
@@ -36,7 +30,7 @@ export const cardData = [
     id: "resume", // Updated to match the section ID
     heading: "Resume",
     icon: <FilePresentIcon />, // Added icon
-    url:"https://drive.google.com/file/d/12v0s8wc1SZ-4ZZVlSZeDZ0eP1vCU1Esu/view?usp=drive_link"
+    url:"https://drive.google.com/file/d/1tJg8hpSuwQtQKQ4kFlBnR8Bg2bmikFR1/view?usp=drive_link"
   },
   {
     id: "contact", // Updated to match the section ID
@@ -48,9 +42,15 @@ export const cardData = [
 
 export const socialMedia = [
   {
-    platform: "LinkedInIcon",
+    id: "linkedin", // Add a unique id
+    platform: "LinkedIn",
     icon: "LinkedIn",
-    url: "https://www.linkedin.com/in/bindu-c-20981b16/",
+    url: "https://www.linkedin.com/in/viswachand-akkanambattu-9aa558147/",
   },
-  { platform: "GitHub", icon: "GitHub", url: "https://github.com/binducattamanchi" },
+  {
+    id: "github", // Add a unique id
+    platform: "GitHub",
+    icon: "GitHub",
+    url: "https://github.com/viswachand",
+  },
 ];

@@ -1,37 +1,34 @@
 import React from "react";
-import { Divider } from "@mui/material";
-import jsonData from "../Data/Data.json";
 import CustomTypography from "../Components/typography";
-import CustomButton from "../Components/button";
 import CustomBox from "../Components/box";
 import CustomGrid from "../Components/grid";
+import CustomButton from "../Components/button";
+import { DividerCom, HighlightText } from "../Components/utilities";
+import ArticleIcon from "@mui/icons-material/Article";
 
-function Experience() {
-  const { experience } = jsonData;
+const phrasesToHighlight = [
+  "front-end development team",
+  "Punjab National Bank",
+];
 
+function Experience({ experience }) {
   return (
     <>
       <CustomTypography variant="h1">Experience</CustomTypography>
-      <Divider
-        sx={{
-          borderColor: "primary.main",
-          borderWidth: 2,
-          margin: "16px 0",
-          width: "6rem",
-        }}
-      />
+      <DividerCom />
       <CustomBox sx={{ width: "100%" }}>
         <CustomGrid container rowSpacing={0.5} sx={{ mb: 2 }}>
           {experience.map((item, index) => (
             <React.Fragment key={index}>
               <CustomGrid size={{ xs: 12, md: 8 }}>
-                <CustomTypography variant="body2">
-                  {item.company}
-                </CustomTypography>
+                <a href={item.url} target="_blank" rel="noopener noreferrer">
+                  <CustomTypography variant="body2">
+                    {item.company}
+                  </CustomTypography>
+                </a>
               </CustomGrid>
               <CustomGrid size={{ xs: 12, md: 4 }}>
                 <CustomTypography variant="h6">
-                  {" "}
                   {item.location}
                 </CustomTypography>
               </CustomGrid>
@@ -41,70 +38,67 @@ function Experience() {
               </CustomGrid>
               <CustomGrid size={{ xs: 12, md: 4 }}>
                 <CustomTypography variant="h7">
-                  {" "}
                   {item.duration}
                 </CustomTypography>
               </CustomGrid>
+              <CustomGrid xs={12}>
+                <CustomTypography
+                  variant="h3"
+                  sx={{ fontWeight: "bold", margin: "1rem 0" }}
+                >
+                  Description:
+                </CustomTypography>
+                {item.Description && item.Description.length > 0 && (
+                  <>
+                    {/* First Description item displayed normally */}
+                    <CustomTypography variant="body1" sx={{ mb: 2 }}>
+                      <HighlightText
+                        text={item.Description[0]}
+                        phrases={phrasesToHighlight}
+                      />
+                    </CustomTypography>
 
-              <CustomGrid item xs={12}>
-                <CustomTypography
-                  variant="h3"
-                  sx={{ fontWeight: "bold", marginTop: "16px", mb: "5px" }}
-                >
-                  Environment:
-                </CustomTypography>
-                <CustomGrid container direction="row" spacing={0.4}>
-                  {item.environment.map((envItem, envIndex) => (
-                    <CustomGrid item key={envIndex}>
-                      <CustomTypography
-                        variant="body1"
-                        component="span"
-                        sx={{ whiteSpace: "nowrap" }}
-                      >
-                        {envItem}
-                        {envIndex < item.environment.length - 1 && ","}{" "}
-                      </CustomTypography>
-                    </CustomGrid>
-                  ))}
-                </CustomGrid>
-              </CustomGrid>
-              <CustomGrid item xs={12} mb={5}>
-                <CustomTypography
-                  variant="h3"
-                  sx={{ fontWeight: "bold", mt: "16px", mb: "16px" }}
-                >
-                  Responsibilities:
-                </CustomTypography>
-                <ul style={{ paddingLeft: "20px", margin: 0 }}>
-                  {item.responsibilities.map((responsibility, index) => (
-                    <li key={index} style={{ marginBottom: "8px" }}>
-                      <CustomTypography variant="body1">
-                        {responsibility}
-                      </CustomTypography>
-                    </li>
-                  ))}
-                </ul>
-                <CustomBox
-                  sx={{
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    mt: 3,
-                    mb: 3,
-                  }}
-                >
-                  
+                    {/* Remaining items displayed as a list */}
+                    <CustomTypography
+                      variant="h3"
+                      sx={{ fontWeight: "bold", margin: "1rem 0" }}
+                    >
+                      Responsibilities:
+                    </CustomTypography>
+                    {item.Description.length > 1 && (
+                      <ul style={{ paddingLeft: "20px", margin: 0 }}>
+                        {item.Description.slice(1).map((desc, index) => (
+                          <li key={index} style={{ marginBottom: "8px" }}>
+                            <CustomTypography variant="body1">
+                              <HighlightText
+                                text={desc}
+                                phrases={phrasesToHighlight}
+                              />
+                            </CustomTypography>
+                          </li>
+                        ))}
+                      </ul>
+                    )}
+                    <CustomBox
+                      sx={{
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        m: "2rem 0 1rem 0",
+                      }}
+                    >
                       <CustomButton
-                        key={index}
                         variant="contained"
-                        color="primary"
-                        href={item.href}
-                        icon="Article"
+                        endIcon={<ArticleIcon fontSize="small" />}
+                        href={item.journey}
+                        target="_blank"
+                        rel="noopener noreferrer"
                       >
-                        Read More About this Article
+                        Read More about my Moonraft journey in this artical
                       </CustomButton>
-                 
-                </CustomBox>
+                    </CustomBox>
+                  </>
+                )}
               </CustomGrid>
             </React.Fragment>
           ))}

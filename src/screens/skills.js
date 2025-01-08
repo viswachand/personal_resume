@@ -1,15 +1,11 @@
-import DividerCom from "../Components/utilities";
+import {DividerCom} from "../Components/utilities";
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import jsonData from "../Data/Data.json";
 import CustomTypography from "../Components/typography";
 
-
-function Skills() {
-  const { skills } = jsonData;
-
+function Skills({ skills }) {
   return (
     <>
       <CustomTypography variant="h1">Skills</CustomTypography>

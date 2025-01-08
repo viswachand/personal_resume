@@ -13,10 +13,10 @@ function Projects() {
       <DividerCom />
       <CustomGrid container spacing={2}>
         {projects.map((project, index) => (
-          <CustomGrid item xs={12} sm={6} md={4} key={index}>
+          <CustomGrid  xs={12} sm={6} md={4} key={index}>
             <CustomTypography variant="body2">{project.title}</CustomTypography>
             <CustomGrid container alignItems="center" spacing={1}>
-              <CustomGrid item>
+              <CustomGrid >
                 <CustomTypography
                   variant="h6"
                   sx={{fontWeight:"700", fontSize:"1.1rem"}}
@@ -24,7 +24,7 @@ function Projects() {
                   Environment:
                 </CustomTypography>
               </CustomGrid>
-              <CustomGrid item>
+              <CustomGrid >
                 <CustomTypography
                   variant="body1"
                   component="span"
