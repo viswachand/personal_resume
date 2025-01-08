@@ -30,7 +30,7 @@ jobs:
 
       # Step 5: Deploy to Hostinger via FTP
       - name: Deploy to Hostinger
-        uses: SamKirkland/FTP-Deploy-Action@4.5.0
+        uses: SamKirkland/FTP-Deploy-Action@v4
         with:
           server: ftp://88.223.85.70 # Replace with your FTP server address
           username: ${{ secrets.FTP_USERNAME }}
