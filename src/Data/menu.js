@@ -30,7 +30,7 @@ export const cardData = [
     id: "resume", // Updated to match the section ID
     heading: "Resume",
     icon: <FilePresentIcon />, // Added icon
-    url:"https://drive.google.com/file/d/1tJg8hpSuwQtQKQ4kFlBnR8Bg2bmikFR1/view?usp=drive_link"
+    url: "https://drive.google.com/file/d/1yPC7foXJCyV08VBzdP_p-ksnMg7qBfXA/view?usp=sharing",
   },
   {
     id: "contact", // Updated to match the section ID
@@ -38,7 +38,6 @@ export const cardData = [
     icon: <EmailIcon />, // Added icon
   },
 ];
-
 
 export const socialMedia = [
   {

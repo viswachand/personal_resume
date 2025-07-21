@@ -104,6 +104,7 @@
         {
             "company": "Moonraft Innovation Labs",
             "url": "https://moonraft.com/",
+            "buttonText" : " Find Moonraft journey in this article",
             "title": "Software Engineer",
             "location": "Bangalore, India",
             "duration": "July 2022 to August 2023",
@@ -113,6 +114,21 @@
                 "Involved in gathering the requirements from Tech Leads and other Architects.",
                 "As a part of the innovation team, Coordinate with the UI/UX designer and product owner to deliver functional and user-friendly solutions.",
                 "Ensuring high performance and responsiveness to requests to the back end."
+            ]
+        },
+        {
+            "company": "Good Crop It Pvt Ltd,",
+            "url": "https://goodcorpit.com/",
+            "buttonText" : " Find Good Crop journey in this article",
+            "title": "Software Engineer",
+            "location": "Hyderbad, India",
+            "duration": "Jan 2021 to Jun 2022",
+            "journey":"https://medium.com/@viswachand19/goodcorpit-pvt-ltd-journey-d77cf7f6cf6f",
+            "Description": [
+                "Goodcorpit is a comprehensive research and review platform that assists software buyers and service seekers in choosing the best software or service providers. As a Front-End Developer, I worked on two projects. For the client SC CODE WORKS, I played a pivotal role in migrating a warehouse management system from IBM AS400 to React.js. The second project involved the development of an animal warehouse management solution.",
+                "Involved in various phases of the Software Development Life Cycle (SDLC) of the application like Requirements gathering, Design, Analysis, and Code development.",
+                "Used to interact with the design team for suggestions of screens or UX changes and take the wireframes accordingly.",
+                "Developing functionalities to generate FEDEX and USPS labels for warehouse operations."
             ]
         }
     ],

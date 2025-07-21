@@ -9,6 +9,11 @@ import ArticleIcon from "@mui/icons-material/Article";
 const phrasesToHighlight = [
   "front-end development team",
   "Punjab National Bank",
+  "Full Stack Developer",
+  "Software Engineer",
+  "SC CODE WORKS",
+  "Software Development Life Cycle",
+  "IBM AS400",
 ];
 
 function Experience({ experience }) {
@@ -95,7 +100,7 @@ function Experience({ experience }) {
                         rel="noopener noreferrer"
                         aria-label="Read more about my Moonraft journey in this article"
                       >
-                       Find Moonraft journey in this article
+                        {item.buttonText}
                       </CustomButton>
                     </CustomBox>
                   </>
