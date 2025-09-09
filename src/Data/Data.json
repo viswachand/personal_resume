@@ -1,17 +1,17 @@
 {
     "personalInformation": {
         "name": "Viswachand Akkanambattu",
-        "title": "Software Engineer",
+        "title": "Full Stack Developer",
         "contact": {
             "phone": "+1 2164631168",
-            "email": "viswachand19@gmail.com",
+            "email": "viswachandakkanambattu@gmail.com",
             "github": "https://github.com/viswachand",
             "linkedin": "https://www.linkedin.com/in/viswachand-akkanambattu-9aa558147/",
             "visaStatus": "F1 Valid Thru 07/2028"
         }
     },
     "aboutUs": {
-        "title": "About Me",
+        "title": "About",
         "summary": [
             "As a Software Engineer with 3.5 years of professional experience, I specialize in developing robust and scalable web applications that deliver exceptional performance and user experiences.",
             "During my industry experience, I have significantly worked on the design, development, and management of user-centric, responsive, and scalable front-end applications, ensuring seamless functionality and exceptional user experiences. This has helped me gain substantial exposure to various front-end technologies, including modern JavaScript frameworks and libraries, both in traditional and cloud-native environments. Additionally, I have developed a solid foundation in problem-solving, UI/UX design principles, state management, component-based architecture, web performance optimization, and automating front-end workflows using modern development tools. I enjoy working on challenging projects as they provide ample learning opportunities, contributing to my technical and professional growth, and I aim to continue doing so.",
@@ -28,7 +28,7 @@
             "description": "Great collaboration skills"
         },
         {
-            "title": "Agile and adaptable :",
+            "title": "Agile and adaptable:",
             "description": "Can quickly adapt to changing requirements"
         },
         {
@@ -38,7 +38,7 @@
     ],
     "education": [
         {
-            "degree": "Masters",
+            "degree": "Master of Science (MS) in Computer Science",
             "url": "https://www.csuohio.edu/",
             "institution": "Cleveland State University",
             "year": "2023-2025",
@@ -56,27 +56,44 @@
     ],
     "skills": [
         {
-            "title": "Front-End Technologies",
+            "title": "Programming Languages",
             "items": [
                 "HTML5",
-                "CSS3",
+                "CSS/SCSS/SASS",
                 "JavaScript",
+                "TypeScript",
+                "Java",
+                "Python",
+                "SQL"
+            ]
+        },
+        {
+            "title": "Frontend & Web Technologies",
+            "items": [
                 "React.js",
+                "Next.js",
+                "Angular",
+                "Tailwind CSS",
+                "Material-UI",
+                "Bootstrap",
                 "Redux"
             ]
         },
         {
-            "title": "Back-End Technologies",
+            "title": "Backend Technologies",
             "items": [
                 "Node.js",
-                "Express.js"
+                "Express.js",
+                "Restful APIs",
+                "GraphQL"
             ]
         },
         {
             "title": "Databases",
             "items": [
                 "MongoDB",
-                "MySQL"
+                "MySQL",
+                "PostgreSQL"
             ]
         },
         {
@@ -86,17 +103,10 @@
             ]
         },
         {
-            "title": "Scripting Languages",
-            "items": [
-                "JavaScript",
-                "SQL",
-                "Python (Basic Knowledge)"
-            ]
-        },
-        {
             "title": "Modern Authentication Mechanisms",
             "items": [
-                "JSON Web Tokens (JWT)"
+                "JSON Web Tokens (JWT)",
+                "OAuth2"
             ]
         }
     ],
@@ -104,31 +114,31 @@
         {
             "company": "Moonraft Innovation Labs",
             "url": "https://moonraft.com/",
-            "buttonText" : " Find Moonraft journey in this article",
+            "buttonText": " Find Moonraft journey in this article",
             "title": "Software Engineer",
             "location": "Bangalore, India",
             "duration": "July 2022 to August 2023",
-            "journey":"https://medium.com/@viswachand19/moonraft-journey-336e7104c2f6",
+            "journey": "https://medium.com/@viswachand19/moonraft-journey-336e7104c2f6",
             "Description": [
-                "Moonraft Innovation Labs is a customer experience and innovation firm that combines design, technology, and data to deliver cutting-edge digital solutions. As a member of the front-end development team, I contributed to a project for Punjab National Bank, a leading institution in the Banking and Financial Services sector specializing in secure payment processing. My role involved developing a comprehensive end-to-end solution to streamline customer onboarding through both a mobile application and an online web platform.",
-                "Involved in gathering the requirements from Tech Leads and other Architects.",
-                "As a part of the innovation team, Coordinate with the UI/UX designer and product owner to deliver functional and user-friendly solutions.",
-                "Ensuring high performance and responsiveness to requests to the back end."
+                "Moonraft Innovation Labs is a customer experience and innovation firm that combines design, technology, and data to deliver cutting-edge digital solutions. As a member of the Full Stack Developer team, I contributed to a project for Punjab National Bank, a leading institution in the Banking and Financial Services sector specializing in secure payment processing. My role involved developing a comprehensive end-to-end solution to streamline customer onboarding through both a mobile application and an online web platform.",
+                "Engineered a performant, data-intensive onboarding application, creating a smooth user experience for complex workflows (KYC, e-signatures) that reduced customer onboarding time by 60%",
+                "Built the front end for a modular loan approval engine, creating a data-rich interface that handled complex logic and large datasets of dynamic rules, resulting in a 70",
+                "Demonstrated strong product intuition by collaborating with product and design partners to integrate REST APIs, balancing thoughtful technical decisions with speed to enhance regulatory traceability and deliver user value"
             ]
         },
         {
             "company": "Good Crop It Pvt Ltd,",
             "url": "https://goodcorpit.com/",
-            "buttonText" : " Find Good Crop journey in this article",
-            "title": "Software Engineer",
+            "buttonText": " Find Good Crop journey in this article",
+            "title": "Front-End Developer",
             "location": "Hyderbad, India",
-            "duration": "Jan 2021 to Jun 2022",
-            "journey":"https://medium.com/@viswachand19/goodcorpit-pvt-ltd-journey-d77cf7f6cf6f",
+            "duration": "Feb 2020 to Jun 2022",
+            "journey": "https://medium.com/@viswachand19/goodcorpit-pvt-ltd-journey-d77cf7f6cf6f",
             "Description": [
-                "Goodcorpit is a comprehensive research and review platform that assists software buyers and service seekers in choosing the best software or service providers. As a Front-End Developer, I worked on two projects. For the client SC CODE WORKS, I played a pivotal role in migrating a warehouse management system from IBM AS400 to React.js. The second project involved the development of an animal warehouse management solution.",
-                "Involved in various phases of the Software Development Life Cycle (SDLC) of the application like Requirements gathering, Design, Analysis, and Code development.",
-                "Used to interact with the design team for suggestions of screens or UX changes and take the wireframes accordingly.",
-                "Developing functionalities to generate FEDEX and USPS labels for warehouse operations."
+                "Goodcorpit is a comprehensive research and review platform that assists software buyers and service seekers in choosing the best software or service providers. As a Front-End Developer, I worked on two projects. I played a pivotal role in migrating a warehouse management system from IBM AS400 to React.js. The second project involved the development of an animal warehouse management solution.",
+                "Migrated legacy AS400-based system to modern web applications with enhanced UI/UX using React.js, Redux, and Node.js, improving usability and maintainability for warehouse operations",
+                "By migrating the application to React.js with an optimized UI/UX, significantly enhanced the efficiency of inbound and outbound logistics operations, leading to a 45% increase in processing throughput and improved real-time visibility for warehouse teams.",
+                "Built reusable React components with Redux integration for FedEx and USPS shipping workflows, enabling real-time tracking and order placement; collaborated with warehouse staff, product managers, and backend teams to ensure seamless end-to-end logistics functionality and barcode scanning accuracy."
             ]
         }
     ],

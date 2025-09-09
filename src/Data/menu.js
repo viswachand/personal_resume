@@ -1,55 +1,67 @@
-import PersonIcon from "@mui/icons-material/Person";
-import WorkIcon from "@mui/icons-material/Work";
-import SchoolIcon from "@mui/icons-material/School";
-import StarBorderIcon from "@mui/icons-material/StarBorder";
+import PermIdentityOutlinedIcon from "@mui/icons-material/PermIdentityOutlined";
+import BusinessCenterOutlinedIcon from "@mui/icons-material/BusinessCenterOutlined";
+import SchoolOutlinedIcon from "@mui/icons-material/SchoolOutlined";
+import StarBorderOutlinedIcon from "@mui/icons-material/StarBorderOutlined";
 import FilePresentIcon from "@mui/icons-material/FilePresent";
-import EmailIcon from "@mui/icons-material/Email";
+import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 
 export const cardData = [
   {
-    id: "about", // Updated to match the section ID
+    id: "about",
     heading: "About",
-    icon: <PersonIcon />, // Use the component directly
+    icon: <PermIdentityOutlinedIcon />,
   },
   {
-    id: "experience", // Updated to match the section ID
+    id: "experience",
     heading: "Experience",
-    icon: <WorkIcon />, // Added icon
+    icon: <BusinessCenterOutlinedIcon />,
   },
   {
-    id: "education", // Updated to match the section ID
+    id: "education",
     heading: "Education",
-    icon: <SchoolIcon />, // Added icon
+    icon: <SchoolOutlinedIcon />,
   },
   {
-    id: "skills", // Updated to match the section ID
+    id: "skills",
     heading: "Skills",
-    icon: <StarBorderIcon />, // Added icon
+    icon: <StarBorderOutlinedIcon />,
   },
   {
-    id: "resume", // Updated to match the section ID
+    id: "resume",
     heading: "Resume",
-    icon: <FilePresentIcon />, // Added icon
+    icon: <FilePresentIcon />,
     url: "https://drive.google.com/file/d/1yPC7foXJCyV08VBzdP_p-ksnMg7qBfXA/view?usp=sharing",
   },
   {
-    id: "contact", // Updated to match the section ID
+    id: "contact",
     heading: "Contact",
-    icon: <EmailIcon />, // Added icon
+    icon: <EmailOutlinedIcon />,
   },
 ];
 
 export const socialMedia = [
   {
-    id: "linkedin", // Add a unique id
+    id: "linkedin",
     platform: "LinkedIn",
     icon: "LinkedIn",
     url: "https://www.linkedin.com/in/viswachand-akkanambattu-9aa558147/",
   },
   {
-    id: "github", // Add a unique id
+    id: "github",
     platform: "GitHub",
     icon: "GitHub",
     url: "https://github.com/viswachand",
+  },
+  {
+    id: "instagram",
+    platform: "Instagram",
+    icon: "Instagram",
+    url: "https://www.instagram.com/yourusername/",
+  },
+  {
+    id: "medium",
+    platform: "Medium",
+    icon: "Medium",
+    url: "https://medium.com/@yourusername",
   },
 ];

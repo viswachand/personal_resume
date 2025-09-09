@@ -1,69 +1,62 @@
-
 import { createTheme } from "@mui/material/styles";
 
 let theme = createTheme({
   palette: {
     primary: {
-      main: "rgb(3, 21, 112)",
-      light: "#fafafa",
+      main: "rgb(8, 39, 99)",
+      light: "#173b6c",
     },
     secondary: {
-      main: "#0078bf",
+      main: "rgb(8, 39, 99)",
     },
     background: {
-      main: "#007bc2",
+      text: "#272829",
       light: "#c4d9ef",
       verylight: "#eff5ff",
-      gradient: "linear-gradient(209.21deg, rgb(8 18 69) 10.57%, rgb(85 57 162) 99.38%);",
+      gradient: "#c4d9ef",
     },
     body: {
       light: "#000000",
+      helight: "#0f81b5",
     },
   },
-})
+});
 
 theme = createTheme(theme, {
-  
   typography: {
     h1: {
-      fontSize: "2rem",
-      fontWeight: "bold",
-      [theme.breakpoints.down('sm')]: {
-        fontSize: "1.5rem",
-      },
-      color: "rgb(3, 21, 112)",
-      hyphens: "auto",
-      wordSpacing: "2px",
-      whiteSpace: "nowrap",
+      fontFamily: "Poppins, sans-serif",
+      fontWeight: "600",
+      fontSize: "1.2rem",
     },
     h2: {
-      fontFamily: '"Raleway", sans-serif;',
+      fontFamily: "'Raleway', sans-serif",
       fontWeight: "bold",
-      fontSize: "1.2rem",
-      color: "body.light",
-
+      fontSize: "2rem",
     },
-    h3: {
-      fontFamily: "'Open Sans', sans-serif",
+    h4: {
+      fontFamily: "'Raleway', sans-serif",
       fontWeight: "bold",
+      fontSize: "1.5rem",
+    },
+    h5: {
+      fontFamily: "Poppins, sans-serif",
+      fontWeight: "600",
       fontSize: "1.1rem",
-      [theme.breakpoints.down('sm')]: {
-        fontSize: "1rem",
-      },
-      color: "primary.light",
     },
     h6: {
       fontFamily: '"Raleway", sans-serif;',
       fontWeight: 500,
       fontSize: "1.5rem",
-      [theme.breakpoints.down('sm')]: {
+      [theme.breakpoints.down("sm")]: {
         fontSize: "1.1rem",
       },
     },
     h7: {
       fontFamily: '"Raleway", sans-serif',
+      fontWeight: 500,
       fontSize: "1.25rem",
-      [theme.breakpoints.down('sm')]: {
+      [theme.breakpoints.down("sm")]: {
         fontSize: "1rem",
       },
       color: "#6c757d !important",
@@ -74,15 +67,15 @@ theme = createTheme(theme, {
       fontFamily: "'Open Sans', sans-serif",
       fontWeight: 500,
       fontSize: "1rem",
-      color: (theme) => theme.palette.secondary.main,
       textAlign: "justify",
       hyphens: "auto",
       wordSpacing: "0px",
       letterSpacing: "0.5px",
+      lineHeight: 1.4,
       whiteSpace: "pre-wrap",
     },
     body2: {
-      fontFamily: "'Open Sans', sans-serif", 
+      fontFamily: "'Open Sans', sans-serif",
       fontWeight: 700,
       fontSize: "1.3rem",
       color: "primary.main",
@@ -97,7 +90,7 @@ theme = createTheme(theme, {
       styleOverrides: {
         root: {
           minWidth: "40px",
-          color: "transperent", 
+          color: "transperent",
         },
       },
     },
@@ -106,16 +99,15 @@ theme = createTheme(theme, {
         primary: {
           fontFamily: "'Open Sans', sans-serif",
           fontSize: "0.95rem",
-          fontWeight: 600,
-          color: "#fafafa",
-          opacity: "0.9",
+          fontWeight: 500,
+          color: "#000000",
           hyphens: "auto",
           wordSpacing: "0px",
           letterSpacing: "0.5px",
           // whiteSpace: "nowrap",
         },
         secondary: {
-          fontSize: "0.875rem", // Override the font size for secondary text
+          fontSize: "0.875rem",
         },
       },
     },
@@ -134,7 +126,5 @@ theme = createTheme(theme, {
     },
   },
 });
-
-
 
 export default theme;

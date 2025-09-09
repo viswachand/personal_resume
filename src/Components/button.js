@@ -1,7 +1,13 @@
 import { Button } from "@mui/material";
 import * as Icons from "@mui/icons-material";
 
-function CustomButton({ variant = "contained", color = "primary", children, icon, ...props }) {
+function CustomButton({
+  variant = "contained",
+  color = "primary",
+  children,
+  icon,
+  ...props
+}) {
   const getIconComponent = (iconName) => {
     const IconComponent = Icons[iconName];
     return IconComponent ? <IconComponent sx={{ fontSize: "50px" }} /> : null;
@@ -18,23 +24,22 @@ function CustomButton({ variant = "contained", color = "primary", children, icon
       sx={{
         ...(variant === "outlined" && {
           backgroundColor: "transparent",
-          color: "primary.main", // Ensure primary color text for outlined buttons
-          border: "1px solid", // Add border for outlined variant
-          borderColor: "primary.main",
+          color: "body.helight", // Ensure primary color text for outlined buttons
+
           "&:hover": {
-            backgroundColor: "rgba(0, 0, 0, 0.04)", // Light hover effect
-            color: "primary.main",
+            backgroundColor: "body.helight",
+            color: "body.helight",
           },
         }),
         ...(variant === "contained" && {
-          backgroundColor: "primary.main",
+          backgroundColor: "body.helight",
           color: "white",
           "&:hover": {
-            backgroundColor: "primary.dark",
+            backgroundColor: "body.helight",
             color: "white",
           },
         }),
-        textTransform: "none", // Prevent uppercase transformation
+        textTransform: "none",
       }}
     >
       {children}

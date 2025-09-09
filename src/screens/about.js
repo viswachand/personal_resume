@@ -1,6 +1,4 @@
 import React from "react";
-// import { ListItem, ListItemText } from "@mui/material";
-// import jsonData from "../Data/Data.json";
 import { DividerCom, HighlightText } from "../Components/utilities";
 import CustomTypography from "../Components/typography";
 import CustomGrid from "../Components/grid";
@@ -8,12 +6,10 @@ import CustomBox from "../Components/box";
 import CustomButton from "../Components/button";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import { Link as ScrollLink } from "react-scroll";
+import { motion } from "framer-motion"; // Make sure framer-motion@6 is installed
 
 function AboutUS({ aboutUs, keyCompetencies }) {
   const { title, summary } = aboutUs;
-  // const certifications = jsonData.certifications || [];
-
-  // Function to highlight specific text
   const phrasesToHighlight = [
     "Software Engineer",
     "3.5 years of professional experience",
@@ -22,18 +18,29 @@ function AboutUS({ aboutUs, keyCompetencies }) {
   return (
     <>
       {/* Title Section */}
-      <CustomTypography variant="h1">{title}</CustomTypography>
+      <CustomTypography variant="h2" color="primary.light">
+        {title}
+      </CustomTypography>
       <DividerCom />
 
       {/* Summary Section */}
       {summary.map((text, index) => (
-        <CustomTypography key={index} variant="body1" sx={{ mb: 2, mt: 3 }}>
+        <CustomTypography
+          key={index}
+          variant="body1"
+          color="background.text"
+          sx={{ mb: 2, mt: 3 }}
+        >
           <HighlightText text={text} phrases={phrasesToHighlight} />
         </CustomTypography>
       ))}
 
       {/* Key Competencies Section */}
-      <CustomTypography variant="h1" sx={{ mt: 4, mb: 2, fontSize: "1.5rem" }}>
+      <CustomTypography
+        variant="h2"
+        color="primary.light"
+        sx={{ mt: 4, mb: 2, fontSize: "1.65rem" }}
+      >
         Key Competencies
       </CustomTypography>
       <CustomBox sx={{ m: 2 }}>
@@ -46,15 +53,21 @@ function AboutUS({ aboutUs, keyCompetencies }) {
           }}
         >
           {keyCompetencies.map((competency, index) => (
-            <React.Fragment key={index}>
-              <CustomGrid size={{ xs: 12, md: 6 }}>
+            <CustomGrid key={index} size={{ xs: 12, md: 6 }}>
+              <motion.div
+                initial={{ opacity: 0, x: 150 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true, amount: 0.3 }}
+                transition={{ duration: 0.8, ease: "easeOut" }}
+              >
                 <CustomTypography
-                  variant="body1" 
+                  variant="body1"
+                  sx={{ whiteSpace: "pre-line" }}
                 >
                   <strong>{competency.title}</strong> {competency.description}
                 </CustomTypography>
-              </CustomGrid>
-            </React.Fragment>
+              </motion.div>
+            </CustomGrid>
           ))}
         </CustomGrid>
       </CustomBox>
@@ -68,44 +81,11 @@ function AboutUS({ aboutUs, keyCompetencies }) {
             m: "3rem 0 2rem 0",
           }}
         >
-          <CustomButton variant="contained" endIcon={<ArrowDropDownIcon />}>Read More</CustomButton>
+          <CustomButton variant="contained" endIcon={<ArrowDropDownIcon />}>
+            Read More
+          </CustomButton>
         </CustomBox>
       </ScrollLink>
-
-      {/* Certifications Section */}
-      {/* {certifications.length > 0 && (
-        <>
-          <CustomTypography variant="h1" sx={{ mb: 2 }}>
-            Certifications
-          </CustomTypography>
-
-          <CustomGrid container spacing={2}>
-            {certifications.map((certification, index) => (
-              <CustomGrid  xs={12} sm={6} md={3} key={index}>
-                <ListItem>
-                  <ListItemText
-                    primary={
-                      <CustomTypography variant="h6">
-                        {certification.name}
-                      </CustomTypography>
-                    }
-                    secondary={`Year: ${certification.year}`}
-                    sx={{
-                      "& .MuiListItemText-primary": {
-                        color: "black",
-                        fontWeight: "bold",
-                      },
-                      "& .MuiListItemText-secondary": {
-                        color: "gray",
-                      },
-                    }}
-                  />
-                </ListItem>
-              </CustomGrid>
-            ))}
-          </CustomGrid>
-        </>
-      )} */}
     </>
   );
 }

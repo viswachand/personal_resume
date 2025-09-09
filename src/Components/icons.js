@@ -6,7 +6,7 @@ function CustomIcons(iconName) {
 
   return IconComponent ? (
     <IconComponent
-      style={{ color: theme.palette.primary.light, fontSize: "33px" }}
+      style={{ color: theme.palette.primary.main, fontSize: "30px" }}
     />
   ) : null;
 }

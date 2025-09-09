@@ -25,8 +25,21 @@ import CustomTypography from "./Components/typography";
 import CustomBox from "./Components/box";
 import CustomGrid from "./Components/grid";
 import CustomIcons from "./Components/icons";
+import { motion } from "framer-motion";
 
 const drawerWidth = 300;
+
+const AnimatedSection = ({ children, ...props }) => (
+  <motion.div
+    initial={{ opacity: 0, y: 150 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true, amount: 0.2 }}
+    transition={{ duration: 0.9, ease: "easeOut" }}
+    {...props}
+  >
+    {children}
+  </motion.div>
+);
 
 export default function PermanentDrawerLeft({ config }) {
   const theme = useTheme();
@@ -38,14 +51,12 @@ export default function PermanentDrawerLeft({ config }) {
     keyCompetencies,
     skills,
   } = config || {};
-  const { name, title, contact } = personalInformation;
+  const { name, title, contact } = personalInformation || {};
   const isMobile = useMediaQuery("(max-width:600px)");
   const [open, setOpen] = React.useState(!isMobile);
   const [showScroll, setShowScroll] = React.useState(false);
 
-  const toggleDrawer = () => {
-    setOpen((prev) => !prev);
-  };
+  const toggleDrawer = () => setOpen((prev) => !prev);
 
   const handleScroll = () => {
     const currentScroll = window.scrollY;
@@ -61,22 +72,24 @@ export default function PermanentDrawerLeft({ config }) {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const sectionPadding = { p: 3 };
+  const sectionPadding = { pl: 6, pr: 6 };
 
   return (
     <CustomBox sx={{ display: "flex" }}>
       <CssBaseline />
+
+      {/* Drawer */}
       <Drawer
         sx={{
           width: drawerWidth,
           flexShrink: 0,
           "& .MuiDrawer-paper": {
             width: drawerWidth,
+            borderRight: 0,
             boxSizing: "border-box",
-            padding: isMobile ? "16px 8px 8px" : 3,
+            padding: isMobile ? "16px 8px 8px" : 1,
             background: theme.palette.background.gradient,
-            color: "#fff",
-            height:"100%"
+            height: "100%",
           },
         }}
         variant={isMobile ? "temporary" : "permanent"}
@@ -97,42 +110,47 @@ export default function PermanentDrawerLeft({ config }) {
 
         <CustomBox display="flex" justifyContent="center" alignItems="center">
           <Avatar
-            alt="Viswachand Akkanamabattu"
-            src="/icons/vc.jpeg"
-            sx={{ width: 160, height: 160, mb: 3, mt: 3 }}
+            alt={name}
+            src="/icons/vc1.jpeg"
+            sx={{
+              width: 130,
+              height: 130,
+              mb: 3,
+              mt: 6,
+              pl: 0.1,
+              border: "2px solid",
+              borderColor: "primary.main",
+            }}
           />
         </CustomBox>
 
-        <CustomTypography align="center" color="primary.light" variant="h2">
+        <CustomTypography align="center" color="secondary.main" variant="h1">
           {name}
         </CustomTypography>
         <CustomTypography
           align="center"
-          color="primary.light"
-          variant="h3"
+          color="body.helight"
+          variant="h5"
           sx={{ mb: 1, mt: 1 }}
         >
           {title}
         </CustomTypography>
-        <CustomGrid
-          container
-          direction="row"
-          justifyContent="center"
-          alignItems="center"
-        >
+
+        <CustomGrid container justifyContent="center" alignItems="center">
           {socialMedia.map((media) => (
-            <CustomGrid key={media.id} sx={{ mt: 2 }}>
+            <CustomGrid key={media.id} sx={{ mt: 1 }}>
               <a
                 href={media.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                style={{ margin: "0 8px" }}
+                style={{ margin: "0 5px" }}
               >
                 {CustomIcons(media.icon)}
               </a>
             </CustomGrid>
           ))}
         </CustomGrid>
+
         <List>
           {cardData.map(({ id, heading, icon, url }, index) =>
             url ? (
@@ -152,10 +170,10 @@ export default function PermanentDrawerLeft({ config }) {
               <ScrollLink
                 key={`${id}-${index}`}
                 to={id}
-                smooth={true}
+                smooth
                 duration={1000}
                 offset={0}
-                spy={true}
+                spy
                 exact="true"
               >
                 <ListItem disablePadding>
@@ -169,6 +187,8 @@ export default function PermanentDrawerLeft({ config }) {
           )}
         </List>
       </Drawer>
+
+      {/* Main Content */}
       <CustomBox
         component="main"
         sx={{ flexGrow: 1, bgcolor: "background.default" }}
@@ -188,43 +208,66 @@ export default function PermanentDrawerLeft({ config }) {
             <MenuIcon />
           </IconButton>
         )}
+
         <div id="about">
-          <CustomBox sx={sectionPadding}>
-            <AboutUS aboutUs={aboutUs} keyCompetencies={keyCompetencies} />
-          </CustomBox>
+          <AnimatedSection>
+            <CustomBox sx={sectionPadding}>
+              <AboutUS aboutUs={aboutUs} keyCompetencies={keyCompetencies} />
+            </CustomBox>
+          </AnimatedSection>
         </div>
+
         <div id="experience">
-          <CustomBox
-            sx={{
-              backgroundColor: theme.palette.background.verylight,
-              ...sectionPadding,
-            }}
-          >
-            <Experience experience={experience} />
-          </CustomBox>
+          <AnimatedSection>
+            <CustomBox
+              sx={{
+                backgroundColor: theme.palette.background.verylight,
+                ...sectionPadding,
+                pt: 6,
+                pb: 6,
+              }}
+            >
+              <Experience experience={experience} />
+            </CustomBox>
+          </AnimatedSection>
         </div>
+
         <div id="education">
-          <CustomBox sx={sectionPadding}>
-            <Education education={education} />
-          </CustomBox>
+          <AnimatedSection>
+            <CustomBox sx={{ ...sectionPadding, pt: 6, pb: 6 }}>
+              <Education education={education} />
+            </CustomBox>
+          </AnimatedSection>
         </div>
 
         <div id="skills">
-          <CustomBox sx={sectionPadding}>
-            <Skills skills={skills} />
-          </CustomBox>
+          <AnimatedSection>
+            <CustomBox
+              sx={{
+                backgroundColor: theme.palette.background.verylight,
+                ...sectionPadding,
+                pt: 6,
+                pb: 6,
+              }}
+            >
+              <Skills skills={skills} />
+            </CustomBox>
+          </AnimatedSection>
         </div>
+
         <div id="contact">
-          <CustomBox
-            component="footer"
-            sx={{
-              backgroundColor: theme.palette.background.verylight,
-              ...sectionPadding,
-              mt: "auto",
-            }}
-          >
-            <Contact contact={contact} />
-          </CustomBox>
+          <AnimatedSection>
+            <CustomBox
+              component="footer"
+              sx={{
+                ...sectionPadding,
+                pt: 6,
+                mb: "auto",
+              }}
+            >
+              <Contact contact={contact} />
+            </CustomBox>
+          </AnimatedSection>
         </div>
       </CustomBox>
 
@@ -234,11 +277,9 @@ export default function PermanentDrawerLeft({ config }) {
             position: "fixed",
             bottom: 20,
             right: 20,
-            backgroundColor: theme.palette.primary.main,
+            backgroundColor: theme.palette.body.helight,
             color: "white",
-            "&:hover": {
-              backgroundColor: theme.palette.primary.dark,
-            },
+            "&:hover": { backgroundColor: theme.palette.body.helight },
           }}
           component={ScrollLink}
           to="about"
