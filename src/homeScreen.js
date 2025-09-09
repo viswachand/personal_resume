@@ -31,10 +31,10 @@ const drawerWidth = 300;
 
 const AnimatedSection = ({ children, ...props }) => (
   <motion.div
-    initial={{ opacity: 0, y: 150 }}
+    initial={{ opacity: 0, y: 120 }}
     whileInView={{ opacity: 1, y: 0 }}
     viewport={{ once: true, amount: 0.2 }}
-    transition={{ duration: 0.9, ease: "easeOut" }}
+    transition={{ duration: 0.8, ease: "easeOut" }}
     {...props}
   >
     {children}
