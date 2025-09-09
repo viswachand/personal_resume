@@ -104,7 +104,9 @@ theme = createTheme(theme, {
           hyphens: "auto",
           wordSpacing: "0px",
           letterSpacing: "0.5px",
-          // whiteSpace: "nowrap",
+          "&:hover": {
+            color: "rgb(8, 39, 99)",
+          },
         },
         secondary: {
           fontSize: "0.875rem",

@@ -161,6 +161,17 @@ export default function PermanentDrawerLeft({ config }) {
                   target="_blank"
                   rel="noopener noreferrer"
                   disableRipple
+                  sx={{
+                    "&.MuiButtonBase-root:hover": {
+                      backgroundColor: "transparent !important",
+                    },
+                    "&.Mui-selected": {
+                      backgroundColor: "transparent !important",
+                    },
+                    "&.Mui-selected:hover": {
+                      backgroundColor: "transparent !important",
+                    },
+                  }}
                 >
                   <ListItemIcon>{icon}</ListItemIcon>
                   <ListItemText primary={heading} />
@@ -191,7 +202,7 @@ export default function PermanentDrawerLeft({ config }) {
       {/* Main Content */}
       <CustomBox
         component="main"
-        sx={{ flexGrow: 1, bgcolor: "background.default" }}
+        sx={{ flexGrow: 1, bgcolor: "background.default", mt: 5, mb: 5 }}
       >
         {isMobile && (
           <IconButton

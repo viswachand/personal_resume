@@ -18,7 +18,7 @@ function AboutUS({ aboutUs, keyCompetencies }) {
   return (
     <>
       {/* Title Section */}
-      <CustomTypography variant="h2" color="primary.light" sx={{ mt: 4 }}>
+      <CustomTypography variant="h2" color="primary.light">
         {title}
       </CustomTypography>
       <DividerCom />
