@@ -56,7 +56,7 @@ export const socialMedia = [
     id: "instagram",
     platform: "Instagram",
     icon: "Instagram",
-    url: "https://www.instagram.com/yourusername/",
+    url: "https://www.instagram.com/viswachandreddy/",
   },
   {
     id: "medium",
