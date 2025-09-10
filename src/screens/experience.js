@@ -79,7 +79,7 @@ function Experience({ experience }) {
                 {item.Description.length > 1 && (
                   <ul style={{ paddingLeft: "20px", margin: 0 }}>
                     {item.Description.slice(1).map((desc, idx) => (
-                      <li key={idx} style={{ marginBottom: "8px" }}>
+                      <li key={idx} style={{ marginBottom: "3px" }}>
                         <CustomTypography variant="body1">
                           <HighlightText
                             text={desc}

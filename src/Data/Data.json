@@ -1,7 +1,7 @@
 {
     "personalInformation": {
         "name": "Viswachand Akkanambattu",
-        "title": "Full Stack Developer",
+        "title": "Software Engineer",
         "contact": {
             "phone": "+1 2164631168",
             "email": "viswachandakkanambattu@gmail.com",
@@ -13,7 +13,7 @@
     "aboutUs": {
         "title": "About",
         "summary": [
-            "As a Software Engineer with 3.5 years of professional experience, I specialize in developing robust and scalable web applications that deliver exceptional performance and user experiences.",
+            "As a Software Engineer with 4.5 years of professional experience, I specialize in developing robust and scalable web applications that deliver exceptional performance and user experiences.",
             "During my industry experience, I have significantly worked on the design, development, and management of user-centric, responsive, and scalable front-end applications, ensuring seamless functionality and exceptional user experiences. This has helped me gain substantial exposure to various front-end technologies, including modern JavaScript frameworks and libraries, both in traditional and cloud-native environments. Additionally, I have developed a solid foundation in problem-solving, UI/UX design principles, state management, component-based architecture, web performance optimization, and automating front-end workflows using modern development tools. I enjoy working on challenging projects as they provide ample learning opportunities, contributing to my technical and professional growth, and I aim to continue doing so.",
             "Outside of work, I enjoy photography, watching movies, and exploring the beauty of nature."
         ]
@@ -68,7 +68,7 @@
             ]
         },
         {
-            "title": "Frontend & Web Technologies",
+            "title": "Frontend Technologies",
             "items": [
                 "React.js",
                 "Next.js",
@@ -112,9 +112,24 @@
     ],
     "experience": [
         {
+            "company": "Cleveland State University",
+            "url": "https://csuohio.edu/",
+            "buttonText": "Find CSU journey in this article",
+            "title": "Software Engineer Intern",
+            "location": "Cleveland, OH, USA",
+            "duration": "September 2024 to May 2025",
+            "journey": "https://medium.com/@viswachand19/csu-journey-336e7104c2f6",
+            "Description": [
+                "Cleveland State University is a public research university in Cleveland, Ohio. As a Software Engineer Intern, I contributed to innovative projects that enhance campus technology and student services. My role involved designing and implementing scalable software solutions to improve student experience and operational efficiency.",
+                "Collaborated on student portal architecture, contributing to microservices-based design discussions and supporting scalability improvements.",
+                "Redesigned and optimized Student & Teacher feedback pages, reducing page load time by 40% and enhancing user satisfaction.",
+                "Strengthened application security by applying best practices, lowering potential vulnerabilities by 25% in testing."
+            ]
+        },
+        {
             "company": "Moonraft Innovation Labs",
             "url": "https://moonraft.com/",
-            "buttonText": " Find Moonraft journey in this article",
+            "buttonText": "Find Moonraft journey in this article",
             "title": "Software Engineer",
             "location": "Bangalore, India",
             "duration": "July 2022 to August 2023",
