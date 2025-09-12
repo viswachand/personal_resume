@@ -70,15 +70,18 @@ export default function PermanentDrawerLeft({ config }) {
   React.useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [isMobile]);
 
-  const sectionPadding = { pl: 6, pr: 6 };
+  React.useEffect(() => {
+    setOpen(!isMobile);
+  }, [isMobile]);
+
+  const sectionPadding = { pl: isMobile ? 3 : 6, pr: isMobile ? 3 : 6 };
 
   return (
     <CustomBox sx={{ display: "flex" }}>
       <CssBaseline />
 
-      {/* Drawer */}
       <Drawer
         sx={{
           width: drawerWidth,
@@ -199,10 +202,9 @@ export default function PermanentDrawerLeft({ config }) {
         </List>
       </Drawer>
 
-      {/* Main Content */}
       <CustomBox
         component="main"
-        sx={{ flexGrow: 1, bgcolor: "background.default", mt: 5, mb: 5 }}
+        sx={{ flexGrow: 1, bgcolor: "background.default", mt: 5, mb: 5, p: 0 }}
       >
         {isMobile && (
           <IconButton
@@ -212,8 +214,8 @@ export default function PermanentDrawerLeft({ config }) {
               position: "absolute",
               right: 16,
               top: 16,
-              backgroundColor: theme.palette.primary.main,
-              color: "primary.light",
+              backgroundColor: theme.palette.body.helight,
+              color: theme.palette.background.verylight,
             }}
           >
             <MenuIcon />

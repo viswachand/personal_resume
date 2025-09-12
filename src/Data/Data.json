@@ -13,7 +13,7 @@
     "aboutUs": {
         "title": "About",
         "summary": [
-            "As a Software Engineer with 4.5 years of professional experience, I specialize in developing robust and scalable web applications that deliver exceptional performance and user experiences.",
+            "Software Engineer with 4.5+ years of experience delivering enterprise systems in banking, finance, and warehouse management. My work has been mostly frontend and backend focused, building cloud-native microservices, event-driven systems, and secure APIs that process millions of transactions with low latency and high reliability.",
             "During my industry experience, I have significantly worked on the design, development, and management of user-centric, responsive, and scalable front-end applications, ensuring seamless functionality and exceptional user experiences. This has helped me gain substantial exposure to various front-end technologies, including modern JavaScript frameworks and libraries, both in traditional and cloud-native environments. Additionally, I have developed a solid foundation in problem-solving, UI/UX design principles, state management, component-based architecture, web performance optimization, and automating front-end workflows using modern development tools. I enjoy working on challenging projects as they provide ample learning opportunities, contributing to my technical and professional growth, and I aim to continue doing so.",
             "Outside of work, I enjoy photography, watching movies, and exploring the beauty of nature."
         ]
@@ -76,7 +76,8 @@
                 "Tailwind CSS",
                 "Material-UI",
                 "Bootstrap",
-                "Redux"
+                "Redux",
+                "Remix"
             ]
         },
         {
@@ -117,17 +118,17 @@
             "buttonText": "Find CSU journey in this article",
             "title": "Software Engineer Intern",
             "location": "Cleveland, OH, USA",
-            "duration": "September 2024 to May 2025",
+            "duration": "Jan 2024 to May 2025",
             "journey": "https://medium.com/@viswachand19/csu-journey-336e7104c2f6",
             "Description": [
-                "Cleveland State University is a public research university in Cleveland, Ohio. As a Software Engineer Intern, I contributed to innovative projects that enhance campus technology and student services. My role involved designing and implementing scalable software solutions to improve student experience and operational efficiency.",
-                "Collaborated on student portal architecture, contributing to microservices-based design discussions and supporting scalability improvements.",
-                "Redesigned and optimized Student & Teacher feedback pages, reducing page load time by 40% and enhancing user satisfaction.",
-                "Strengthened application security by applying best practices, lowering potential vulnerabilities by 25% in testing."
+                "Cleveland State University is a public research university in Cleveland, Ohio. As a Software Engineer Intern, I contributed to innovative projects that enhance campus technology and student services. My role involved designing and implementing scalable software solutions to improve user experience and operational efficiency.",
+                "Revamped Student Dashboard architecture using React, Remix, and TypeScript, cutting load times by 30% for 5,000+ daily users and streamlining merchant workflows.",
+                "Engineered full-stack features using Node.js, Express, MongoDB, and GraphQL, integrating with Remix loaders/actions to enable scalable, SSR-powered admin routing.",
+                "Designed and implemented modular, schema-driven UIs with Zod and Prisma, reducing validation errors by 40% and improving form automation."
             ]
         },
         {
-            "company": "Moonraft Innovation Labs",
+            "company": "Moonraft (Acquired by UST)",
             "url": "https://moonraft.com/",
             "buttonText": "Find Moonraft journey in this article",
             "title": "Software Engineer",
@@ -135,25 +136,25 @@
             "duration": "July 2022 to August 2023",
             "journey": "https://medium.com/@viswachand19/moonraft-journey-336e7104c2f6",
             "Description": [
-                "Moonraft Innovation Labs is a customer experience and innovation firm that combines design, technology, and data to deliver cutting-edge digital solutions. As a member of the Full Stack Developer team, I contributed to a project for Punjab National Bank, a leading institution in the Banking and Financial Services sector specializing in secure payment processing. My role involved developing a comprehensive end-to-end solution to streamline customer onboarding through both a mobile application and an online web platform.",
-                "Engineered a performant, data-intensive onboarding application, creating a smooth user experience for complex workflows (KYC, e-signatures) that reduced customer onboarding time by 60%",
-                "Built the front end for a modular loan approval engine, creating a data-rich interface that handled complex logic and large datasets of dynamic rules, resulting in a 70",
-                "Demonstrated strong product intuition by collaborating with product and design partners to integrate REST APIs, balancing thoughtful technical decisions with speed to enhance regulatory traceability and deliver user value"
+                "Moonraft Innovation Labs is a customer experience and innovation firm that combines design, technology, and data to deliver cutting-edge digital solutions. As a member of the Developer team, I contributed to a project for Punjab National Bank, a leading institution in the Banking and Financial Services sector specializing in secure payment processing. My role involved developing a comprehensive end-to-end solution to streamline customer onboarding through both a mobile application and an online web platform.",
+                "Led the development of customer-facing web portals for Punjab National Bank (PNC) using React.js and Node.js, enabling 24/7 self- service banking across 3M+ users and reducing branch-based queries by 40%",
+                "Integrated Finacle Core Banking APIs with scalable microservices, optimizing transaction workflows and achieving a 30% improvement in API response times under high concurrency.",
+                "Developed loan approval engine, making it easy to handle large volumes of data. This helped speed up decision making and boosted processing efficiency by 70%."
             ]
         },
         {
             "company": "Good Crop It Pvt Ltd,",
             "url": "https://goodcorpit.com/",
             "buttonText": " Find Good Crop journey in this article",
-            "title": "Front-End Developer",
+            "title": "Software Engineer",
             "location": "Hyderbad, India",
             "duration": "Feb 2020 to Jun 2022",
             "journey": "https://medium.com/@viswachand19/goodcorpit-pvt-ltd-journey-d77cf7f6cf6f",
             "Description": [
                 "Goodcorpit is a comprehensive research and review platform that assists software buyers and service seekers in choosing the best software or service providers. As a Front-End Developer, I worked on two projects. I played a pivotal role in migrating a warehouse management system from IBM AS400 to React.js. The second project involved the development of an animal warehouse management solution.",
-                "Migrated legacy AS400-based system to modern web applications with enhanced UI/UX using React.js, Redux, and Node.js, improving usability and maintainability for warehouse operations",
-                "By migrating the application to React.js with an optimized UI/UX, significantly enhanced the efficiency of inbound and outbound logistics operations, leading to a 45% increase in processing throughput and improved real-time visibility for warehouse teams.",
-                "Built reusable React components with Redux integration for FedEx and USPS shipping workflows, enabling real-time tracking and order placement; collaborated with warehouse staff, product managers, and backend teams to ensure seamless end-to-end logistics functionality and barcode scanning accuracy."
+                "Modernized legacy AS/400 logistics platform by architecting a full-stack migration to React.js, Redux, Node.js, and MongoDB, delivering a responsive, operator-centric UI/UX that drove $2M in additional product sales post-migration.",
+                "Engineered FedEx and USPS API integrations using RESTful services and async job queues, enabling real-time shipment tracking, label generation, and order placement; enhanced UX and system performance led to faster product localization and a measurable drop in shipping errors",
+                "Optimized inbound/outbound logistics operations post-migration by implementing barcode scanning, automated routing logic, and dynamic inventory dashboards, reducing manual labor dependency by 40% and increasing throughput via scalable, event-driven architecture"
             ]
         }
     ],
