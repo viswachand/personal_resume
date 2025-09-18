@@ -50,7 +50,7 @@ export const socialMedia = [
     id: "github",
     platform: "GitHub",
     icon: "GitHub",
-    url: "https://github.com/viswachand",
+    url: "https://www.linkedin.com/in/viswachand/",
   },
   {
     id: "instagram",
@@ -62,6 +62,6 @@ export const socialMedia = [
     id: "medium",
     platform: "Medium",
     icon: "Medium",
-    url: "https://medium.com/@yourusername",
+    url: "https://medium.com/@viswachand19",
   },
 ];

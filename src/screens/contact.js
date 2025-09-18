@@ -2,39 +2,12 @@ import React from "react";
 import { useTheme } from "@mui/material";
 import { DividerCom } from "../Components/utilities";
 import { socialMedia } from "../Data/menu";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faLinkedin,
-  faGithub,
-  faInstagram,
-  faMedium,
-} from "@fortawesome/free-brands-svg-icons";
+import GetIconComponent from "../Components/fontIcons";
 import CustomTypography from "../Components/typography";
 import CustomGrid from "../Components/grid";
 
 function Contact() {
   const theme = useTheme();
-
-  const getIconComponent = (iconName) => {
-    const iconMap = {
-      LinkedIn: { icon: faLinkedin, color: "#2867b2", fontSize: "20px" },
-      GitHub: {
-        icon: faGithub,
-        color: theme.palette.primary.main,
-        fontSize: "20px",
-      },
-      Instagram: { icon: faInstagram, color: "#E1306C", fontSize: "20px" },
-      Medium: { icon: faMedium, color: "#000000", fontSize: "20px" },
-    };
-
-    const config = iconMap[iconName];
-    return config ? (
-      <FontAwesomeIcon
-        icon={config.icon}
-        style={{ color: config.color, fontSize: config.fontSize }}
-      />
-    ) : null;
-  };
 
   return (
     <>
@@ -86,7 +59,7 @@ function Contact() {
               rel="noopener noreferrer"
               style={{ margin: "0 5px" }}
             >
-              {getIconComponent(media.icon)}
+              {GetIconComponent(media.icon)}
             </a>
           </CustomGrid>
         ))}

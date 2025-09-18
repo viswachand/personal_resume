@@ -24,7 +24,7 @@ import Contact from "./screens/contact";
 import CustomTypography from "./Components/typography";
 import CustomBox from "./Components/box";
 import CustomGrid from "./Components/grid";
-import CustomIcons from "./Components/icons";
+import GetIconComponent from "./Components/fontIcons";
 import { motion } from "framer-motion";
 
 const drawerWidth = 300;
@@ -148,7 +148,7 @@ export default function PermanentDrawerLeft({ config }) {
                 rel="noopener noreferrer"
                 style={{ margin: "0 5px" }}
               >
-                {CustomIcons(media.icon)}
+                {GetIconComponent(media.icon)}
               </a>
             </CustomGrid>
           ))}
