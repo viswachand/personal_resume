@@ -17,7 +17,7 @@ let theme = createTheme({
     },
     body: {
       light: "#000000",
-      helight: "#0f81b5",
+      helight: "#2c94c4",
     },
   },
 });

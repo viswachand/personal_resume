@@ -31,10 +31,10 @@ const drawerWidth = 300;
 
 const AnimatedSection = ({ children, ...props }) => (
   <motion.div
-    initial={{ opacity: 0, y: 120 }}
+    initial={{ opacity: 0, y: 100 }}
     whileInView={{ opacity: 1, y: 0 }}
     viewport={{ once: true, amount: 0.2 }}
-    transition={{ duration: 0.8, ease: "easeOut" }}
+    transition={{ duration: 0.7, ease: "easeOut" }}
     {...props}
   >
     {children}
@@ -231,18 +231,18 @@ export default function PermanentDrawerLeft({ config }) {
         </div>
 
         <div id="experience">
-          <AnimatedSection>
-            <CustomBox
-              sx={{
-                backgroundColor: theme.palette.background.verylight,
-                ...sectionPadding,
-                pt: 6,
-                pb: 6,
-              }}
-            >
+          <CustomBox
+            sx={{
+              backgroundColor: theme.palette.background.verylight,
+              ...sectionPadding,
+              pt: 6,
+              pb: 6,
+            }}
+          >
+            <AnimatedSection>
               <Experience experience={experience} />
-            </CustomBox>
-          </AnimatedSection>
+            </AnimatedSection>
+          </CustomBox>
         </div>
 
         <div id="education">

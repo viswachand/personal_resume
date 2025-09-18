@@ -24,7 +24,7 @@ function CustomButton({
       sx={{
         ...(variant === "outlined" && {
           backgroundColor: "transparent",
-          color: "body.helight", // Ensure primary color text for outlined buttons
+          color: "body.helight",
 
           "&:hover": {
             backgroundColor: "body.helight",
