@@ -6,14 +6,42 @@ import CustomBox from "../Components/box";
 import CustomButton from "../Components/button";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import { Link as ScrollLink } from "react-scroll";
-import { motion } from "framer-motion"; // Make sure framer-motion@6 is installed
+import { motion } from "framer-motion";
 
 function AboutUS({ aboutUs, keyCompetencies }) {
   const { title, summary } = aboutUs;
   const phrasesToHighlight = [
     "Software Engineer",
-    "3.5 years of professional experience",
+    "3.5+ years of professional experience",
   ];
+
+  const renderWithLinks = (text) => {
+    const parts = text.split(/(\[.*?\]\(.*?\))/g); // split text into normal + link parts
+    return parts.map((part, index) => {
+      const match = part.match(/\[(.*?)\]\((.*?)\)/); // match [text](url)
+      if (match) {
+        const [, linkText, url] = match;
+        return (
+          <a
+            key={index}
+            href={url}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              color: "#1976d2",
+              textDecoration: "none",
+              fontWeight: 500,
+            }}
+          >
+            {linkText}
+          </a>
+        );
+      }
+      return (
+        <HighlightText key={index} text={part} phrases={phrasesToHighlight} />
+      );
+    });
+  };
 
   return (
     <>
@@ -31,7 +59,7 @@ function AboutUS({ aboutUs, keyCompetencies }) {
           color="background.text"
           sx={{ mb: 2, mt: 3 }}
         >
-          <HighlightText text={text} phrases={phrasesToHighlight} />
+          {renderWithLinks(text)}
         </CustomTypography>
       ))}
 

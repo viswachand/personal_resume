@@ -13,27 +13,29 @@
     "aboutUs": {
         "title": "About",
         "summary": [
-            "Software Engineer with 4.5+ years of experience delivering enterprise systems in banking, finance, and warehouse management. My work has been mostly frontend and backend focused, building cloud-native microservices, event-driven systems, and secure APIs that process millions of transactions with low latency and high reliability.",
-            "During my industry experience, I have significantly worked on the design, development, and management of user-centric, responsive, and scalable front-end applications, ensuring seamless functionality and exceptional user experiences. This has helped me gain substantial exposure to various front-end technologies, including modern JavaScript frameworks and libraries, both in traditional and cloud-native environments. Additionally, I have developed a solid foundation in problem-solving, UI/UX design principles, state management, component-based architecture, web performance optimization, and automating front-end workflows using modern development tools. I enjoy working on challenging projects as they provide ample learning opportunities, contributing to my technical and professional growth, and I aim to continue doing so.",
-            "Outside of work, I enjoy photography, watching movies, and exploring the beauty of nature."
+            "As a Software Engineer with 3.5+ years of professional experience, I specialize in building secure, scalable, and high-performance backend systems for enterprise-grade SaaS platforms across banking, finance, and logistics domains.",
+            "My work focuses on designing Spring Boot microservices, developing RESTful APIs, and implementing event-driven architectures that process millions of transactions with 99.99% uptime. I have architected and modernized large-scale systems from legacy platforms into cloud-native microservices, integrating with financial and logistics APIs, and deploying resilient services on AWS using Docker, Terraform, and CI/CD pipelines.",
+            "My expertise includes Spring Data JPA, Hibernate, Spring Security, Apache Camel, RabbitMQ, database optimization, and implementing secure authentication and authorization mechanisms for sensitive data.",
+            "I am also an active writer on [Medium](https://medium.com/@viswachand19), where I share insights on backend engineering, cloud-native architectures, and best practices in software design.",
+            "Outside my professional work, I love photography, exploring nature, and capturing creative perspectives through my lens."
         ]
     },
     "keyCompetencies": [
         {
-            "title": "Accountable :",
-            "description": "Proven experience in delivering high-impact results"
+            "title": "Accountable:",
+            "description": "Proven experience in delivering scalable and secure backend systems with measurable business impact."
         },
         {
-            "title": "Team player :",
-            "description": "Great collaboration skills"
+            "title": "Team Player:",
+            "description": "Collaborates effectively with cross-functional teams including product, DevOps, QA, and frontend engineering."
         },
         {
-            "title": "Agile and adaptable:",
-            "description": "Can quickly adapt to changing requirements"
+            "title": "Agile and Adaptable:",
+            "description": "Thrives in fast-paced environments and quickly adapts to evolving requirements and technologies."
         },
         {
-            "title": "Positive influence :",
-            "description": "Optimistic driver of new initiatives"
+            "title": "Positive Influence:",
+            "description": "Drives new initiatives and continuous improvement across development and deployment workflows."
         }
     ],
     "education": [
@@ -58,75 +60,71 @@
         {
             "title": "Programming Languages",
             "items": [
-                "HTML5",
-                "CSS/SCSS/SASS",
+                "Java",
                 "JavaScript",
                 "TypeScript",
-                "Java",
                 "Python",
                 "SQL"
             ]
         },
         {
-            "title": "Frontend Technologies",
+            "title": "Backend",
             "items": [
-                "React.js",
-                "Next.js",
-                "Angular",
-                "Tailwind CSS",
-                "Material-UI",
-                "Bootstrap",
-                "Redux",
-                "Remix"
+                "Spring Boot 3",
+                "Spring Framework",
+                "Spring Data JPA",
+                "Hibernate",
+                "Spring Security",
+                "RabbitMQ",
+                "RESTful APIs"
             ]
         },
         {
-            "title": "Backend Technologies",
+            "title": "Cloud",
             "items": [
-                "Node.js",
-                "Express.js",
-                "Restful APIs",
-                "GraphQL"
+                "AWS (EC2, S3, API Gateway, RDS)",
+                "Docker",
+                "Terraform",
+                "CI/CD (GitHub Actions, Jenkins)"
             ]
         },
         {
             "title": "Databases",
             "items": [
-                "MongoDB",
+                "PostgreSQL",
                 "MySQL",
-                "PostgreSQL"
+                "MongoDB"
             ]
         },
         {
-            "title": "Version Control Tools",
+            "title": "Version Control & Collaboration",
             "items": [
-                "Git"
+                "Git",
+                "GitHub",
+                "Jira",
+                "Confluence",
+                "Slack"
             ]
         },
         {
-            "title": "Modern Authentication Mechanisms",
+            "title": "Authentication Mechanisms",
             "items": [
-                "JSON Web Tokens (JWT)",
-                "OAuth2"
+                "Spring Security",
+                "OAuth2",
+                "JSON Web Tokens (JWT)"
+            ]
+        },
+        {
+            "title": "Certifications",
+            "items": [
+                {
+                    "name": "AWS Certified Developer – Associate",
+                    "url": "https://www.credly.com/badges/3f6ffd95-263c-4f97-8c48-1dba91f0aeef/linked_in_profile"
+                }
             ]
         }
     ],
     "experience": [
-        {
-            "company": "Cleveland State University",
-            "url": "https://csuohio.edu/",
-            "buttonText": "Find CSU journey in this article",
-            "title": "Software Engineer Intern",
-            "location": "Cleveland, OH, USA",
-            "duration": "Jan 2024 to May 2025",
-            "journey": "https://medium.com/@viswachand19/csu-journey-336e7104c2f6",
-            "Description": [
-                "Cleveland State University is a public research university in Cleveland, Ohio. As a Software Engineer Intern, I contributed to innovative projects that enhance campus technology and student services. My role involved designing and implementing scalable software solutions to improve user experience and operational efficiency.",
-                "Revamped Student Dashboard architecture using React, Remix, and TypeScript, cutting load times by 30% for 5,000+ daily users and streamlining merchant workflows.",
-                "Engineered full-stack features using Node.js, Express, MongoDB, and GraphQL, integrating with Remix loaders/actions to enable scalable, SSR-powered admin routing.",
-                "Designed and implemented modular, schema-driven UIs with Zod and Prisma, reducing validation errors by 40% and improving form automation."
-            ]
-        },
         {
             "company": "Moonraft (Acquired by UST)",
             "url": "https://moonraft.com/",
@@ -136,25 +134,29 @@
             "duration": "July 2022 to August 2023",
             "journey": "https://medium.com/@viswachand19/moonraft-journey-336e7104c2f6",
             "Description": [
-                "Moonraft Innovation Labs is a customer experience and innovation firm that combines design, technology, and data to deliver cutting-edge digital solutions. As a member of the Developer team, I contributed to a project for Punjab National Bank, a leading institution in the Banking and Financial Services sector specializing in secure payment processing. My role involved developing a comprehensive end-to-end solution to streamline customer onboarding through both a mobile application and an online web platform.",
-                "Led the development of customer-facing web portals for Punjab National Bank (PNC) using React.js and Node.js, enabling 24/7 self- service banking across 3M+ users and reducing branch-based queries by 40%",
-                "Integrated Finacle Core Banking APIs with scalable microservices, optimizing transaction workflows and achieving a 30% improvement in API response times under high concurrency.",
-                "Developed loan approval engine, making it easy to handle large volumes of data. This helped speed up decision making and boosted processing efficiency by 70%."
+                "Moonraft Innovation Labs is a customer experience and innovation firm that combines design, technology, and data to deliver cutting-edge digital solutions. As part of the engineering team, I contributed to modernizing Punjab National Bank's core banking systems into a secure SaaS platform using the Spring ecosystem.",
+                "Led backend development of customer-facing banking portals serving 3M+ users, by designing and implementing secure, scalable microservices with Spring Boot, Spring Data JPA, and Spring Security, reducing branch-based queries by 40%.",
+                "Integrated Finacle Core Banking APIs into a microservices architecture, improving transaction workflows and delivering a 30% reduction in API latency under high concurrency.",
+                "Engineered a loan approval engine capable of handling large-volume data with optimized JPA/Hibernate queries and asynchronous workflows, accelerating decision-making by 70%.",
+                "Implemented message-driven communication with RabbitMQ for reliable, high-throughput inter-service messaging, maintaining 99.99% uptime.",
+                "Deployed containerized services on AWS (EC2, RDS, S3, API Gateway) using Terraform and CI/CD pipelines, reducing deployment time by 50% and enabling seamless horizontal scaling."
             ]
         },
         {
-            "company": "Good Crop It Pvt Ltd,",
+            "company": "Good Crop IT Pvt Ltd",
             "url": "https://goodcorpit.com/",
-            "buttonText": " Find Good Crop journey in this article",
+            "buttonText": "Find Good Crop journey in this article",
             "title": "Software Engineer",
-            "location": "Hyderbad, India",
+            "location": "Hyderabad, India",
             "duration": "Feb 2020 to Jun 2022",
             "journey": "https://medium.com/@viswachand19/goodcorpit-pvt-ltd-journey-d77cf7f6cf6f",
             "Description": [
-                "Goodcorpit is a comprehensive research and review platform that assists software buyers and service seekers in choosing the best software or service providers. As a Front-End Developer, I worked on two projects. I played a pivotal role in migrating a warehouse management system from IBM AS400 to React.js. The second project involved the development of an animal warehouse management solution.",
-                "Modernized legacy AS/400 logistics platform by architecting a full-stack migration to React.js, Redux, Node.js, and MongoDB, delivering a responsive, operator-centric UI/UX that drove $2M in additional product sales post-migration.",
-                "Engineered FedEx and USPS API integrations using RESTful services and async job queues, enabling real-time shipment tracking, label generation, and order placement; enhanced UX and system performance led to faster product localization and a measurable drop in shipping errors",
-                "Optimized inbound/outbound logistics operations post-migration by implementing barcode scanning, automated routing logic, and dynamic inventory dashboards, reducing manual labor dependency by 40% and increasing throughput via scalable, event-driven architecture"
+                "Good Crop IT is a software solutions company delivering enterprise-grade platforms. I worked on modernizing a legacy logistics system into a cloud-based SaaS platform with Spring Boot microservices and AWS.",
+                "Modernized a legacy IBM AS/400 logistics system into a SaaS platform by architecting microservices with Spring Boot, Spring Data JPA, Hibernate, and Spring Security — delivering 99.99% uptime and enabling secure, high-performance operations.",
+                "Engineered RESTful APIs to integrate with FedEx and USPS services, handling millions of transactions and improving shipping speed while reducing errors through secure API design and validation.",
+                "Implemented event-driven workflows using RabbitMQ for real-time barcode scanning, automated routing, and dynamic inventory updates, reducing manual labor dependency by 40%.",
+                "Optimized data access layers with JPA/Hibernate and PostgreSQL, improving query performance and ensuring ACID compliance in distributed environments.",
+                "Deployed containerized backend services on AWS using Docker, Terraform, and GitHub Actions CI/CD pipelines, accelerating release cycles by 60% and enabling seamless scaling."
             ]
         }
     ],
