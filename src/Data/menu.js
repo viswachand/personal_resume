@@ -30,7 +30,7 @@ export const cardData = [
     id: "resume",
     heading: "Resume",
     icon: <FilePresentIcon />,
-    url: "https://drive.google.com/file/d/1xRmXWMN7EBweX4q66_y3lbhZ_oWP87yl/view?usp=sharing",
+    url: "https://drive.google.com/file/d/1qCkJf2rHcUzNYcRAvsQzvg3qz6OlHXiP/view?usp=sharing",
   },
   {
     id: "contact",

@@ -88,11 +88,9 @@ function AboutUS({ aboutUs, keyCompetencies }) {
                 viewport={{ once: true, amount: 0.3 }}
                 transition={{ duration: 0.8, ease: "easeOut" }}
               >
-                <CustomTypography
-                  variant="body1"
-                  sx={{ whiteSpace: "pre-line" }}
-                >
-                  <strong>{competency.title}</strong> {competency.description}
+                <CustomTypography variant="body1">
+                  <strong>{competency.title.trim()}</strong>
+                  {competency.description.replace(/\s+/g, " ").trim()}
                 </CustomTypography>
               </motion.div>
             </CustomGrid>
