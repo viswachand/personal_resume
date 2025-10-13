@@ -91,15 +91,15 @@ function Experience({ experience }) {
                   </ul>
                 )}
 
-                <CustomBox
+                {/* <CustomBox
                   sx={{
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
                     m: "2rem 0 1rem 0",
                   }}
-                >
-                  <CustomButton
+                > */}
+                  {/* <CustomButton
                     variant="contained"
                     endIcon={<ArticleIcon fontSize="small" />}
                     href={item.journey || "#"}
@@ -108,8 +108,8 @@ function Experience({ experience }) {
                     aria-label={`Read more about my ${item.company} journey in this article`}
                   >
                     {item.buttonText}
-                  </CustomButton>
-                </CustomBox>
+                  </CustomButton> */}
+                {/* </CustomBox> */}
               </CustomGrid>
             )}
           </CustomBox>
